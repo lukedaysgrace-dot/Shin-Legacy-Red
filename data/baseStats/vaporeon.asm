@@ -1,8 +1,8 @@
 db DEX_VAPOREON ; pokedex id
-db 130 ; base hp
+db 110 ; base hp
 db 65 ; base attack
 db 60 ; base defense
-db 65 ; base speed
+db 85 ; base speed
 db 110 ; base special
 db WATER ; species type 1
 db WATER ; species type 2
