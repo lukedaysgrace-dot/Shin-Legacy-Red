@@ -191,7 +191,7 @@ SpecialTrainerMoves:
 	db 4,2,BODY_SLAM
 	db 4,3,EXPLOSION
 	db 4,4,EARTHQUAKE
-	;machamp - earthquake, focus energy, siesmic toss, submission
+	;machamp - earthquake, focus energy, rock slide, submission
 	db 5,1,EARTHQUAKE
 	db 0
 
@@ -209,7 +209,7 @@ SpecialTrainerMoves:
 	;arbok - earthquake, glare, screech, sludge
 	db 4,1,EARTHQUAKE
 	;gengar - confuse ray, night shade, hypnosis, dream eater
-	db 5,2,PSYCHIC_M
+	db 5,2,NIGHT_SHADE
 	db 0
 
 	db LANCE,$1
@@ -223,7 +223,7 @@ SpecialTrainerMoves:
 	db 3,1,SURF
 	db 3,2,BODY_SLAM
 	db 3,3,ICE_BEAM
-	;aerodactyl - supersonic, fire blast, fly, hyperbeam
+	;aerodactyl - rock slide, fire blast, fly, hyperbeam
 	db 4,2,FIRE_BLAST
 	db 4,3,FLY
 	;dragonite - blizzard, fire blast, thunder, hyperbeam
@@ -272,10 +272,10 @@ SpecialTrainerMoves:
 	;gyarados - ice beam, body slam, hydro pump, hyperbeam
 	db 4,1,ICE_BEAM
 	db 4,2,BODY_SLAM
-	;arcanine - reflect, rest, double edge, flamethrower
+	;arcanine - reflect, rest, body slam, flamethrower
 	db 5,1,REFLECT
 	db 5,2,REST
-	db 5,3,DOUBLE_EDGE
+	db 5,3,BODY_SLAM
 	;venusaur - razor leaf, toxic, sleep powder, solar beam
 	db 6,2,TOXIC
 	db 0
