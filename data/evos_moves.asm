@@ -1149,7 +1149,7 @@ MissingNo57EvosMoves:
 
 DratiniEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 30, DRAGONAIR
+	db EV_LEVEL, 25, DRAGONAIR
 	db 0
 ; Learnset
 	db 10, THUNDER_WAVE
@@ -1161,14 +1161,14 @@ DratiniEvosMoves:
 
 DragonairEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 55, DRAGONITE
+	db EV_LEVEL, 45, DRAGONITE
 	db 0
 ; Learnset
 	db 10, THUNDER_WAVE
 	db 20, AGILITY
 	db 35, SLAM
 	db 45, DRAGON_RAGE
-	db 55, HYPER_BEAM
+	db 50, HYPER_BEAM
 	db 0
 
 KabutoEvosMoves:
@@ -1181,7 +1181,7 @@ KabutoEvosMoves:
 	db 44, LEER
 	db 49, HYDRO_PUMP
 	db 0
-
+            
 KabutopsEvosMoves:
 ; Evolutions
 	db 0
