@@ -84,7 +84,7 @@ SpecialTrainerMoves:
 	
 	db LT_SURGE,$1
 	;pikachu - thunder wave, quick attack, thundershock, double team
-	;voltorb - tackle, screech, sonic boom
+	;voltorb - tackle, screech, sonic boom, thundershock
 	;raichu - thunderbolt, tail whip, thunder wave, slam
 	db 3,1,THUNDERBOLT
 	db 0
@@ -122,7 +122,7 @@ SpecialTrainerMoves:
 	db SABRINA,$1
 	;kadabra - reflect, disable, psybeam, recover
 	db 1,1,REFLECT
-	;mr mime - confusion, barrier, light screen, seismic toss
+	;mr mime - psybeam, barrier, light screen, seismic toss
 	db 2,4,SEISMIC_TOSS
 	;venomoth - supersonic, leech life, stun spore, psybeam
 	db 3,1,SUPERSONIC
@@ -133,12 +133,12 @@ SpecialTrainerMoves:
 	db BLAINE,$1
 	;ninetales - quick attack, swift, confuse ray, flamethrower
 	db 1,2,SWIFT
-	;magmar - strength, counter, confuse ray, fire punch
+	;magmar - strength, counter, confuse ray, flamethrower
 	db 2,1,STRENGTH
 	db 2,2,COUNTER
-	;rapidash - tail whip, stomp, double-edge, fire spin
+	;rapidash - flamethrower, stomp, double-edge, fire spin
 	db 3,3,DOUBLE_EDGE
-	;arcanine - fire blast, bite, leer, takedown
+	;arcanine - fire blast, bite, leer, body slam
 	db 4,1,FIRE_BLAST
 	db 0
 	
@@ -147,12 +147,12 @@ SpecialTrainerMoves:
 	db 1,1,EARTHQUAKE
 	db 1,2,HYPER_BEAM
 	db 1,3,FISSURE
-	;dugtrio - fissure, dig, sand attack, slash
+	;dugtrio - fissure, earthquake, sand attack, slash
 	db 2,1,FISSURE
 	;nidoqueen - earthquake, double kick, thunder, body slam
 	db 3,1,EARTHQUAKE
 	db 3,3,THUNDER
-	;nidoking - earthquake, double kick, ice beam, thrash
+	;nidoking - earthquake, double kick, ice beam, surf
 	db 4,1,EARTHQUAKE
 	db 4,3,ICE_BEAM
 	;rhydon
@@ -163,9 +163,9 @@ SpecialTrainerMoves:
 	db 0
 	
 	db LORELEI,$1
-	;dewgong - bubblebeam, aurora beam, rest, takedown
-	db 1,1,BUBBLEBEAM
-	;cloyster - clamp, supersonic, aurora beam, spike cannon
+	;dewgong - surf, ice beam, rest, body slam
+	db 1,1,SURF
+	;cloyster - clamp, supersonic, ice beam, spike cannon
 	db 2,2,SUPERSONIC
 	;slowbro - surf, ice beam, amnesia, psychic
 	db 3,1,SURF
@@ -175,6 +175,7 @@ SpecialTrainerMoves:
 	db 4,3,LOVELY_KISS
 	;lapras - body slam, confuse ray, blizzard, hydro pump
 	db 5,3,BLIZZARD
+	;omastar - surf, rock slide, blizzard, seismic toss
 	db 0
 
 	db BRUNO,$1
@@ -186,42 +187,39 @@ SpecialTrainerMoves:
 	db 2,4,SUBMISSION
 	;hitmonlee - submission, focus energy, hi jump kick, mega kick
 	db 3,1,HI_JUMP_KICK
-	;onix
-	db 4,1,BIND
-	db 4,2,BODY_SLAM
-	db 4,3,EXPLOSION
-	db 4,4,EARTHQUAKE
+	;golem - earthquake, rock slide, body slam, explosion
+	db 4,1,ROCK_SLIDE
 	;machamp - earthquake, focus energy, rock slide, submission
 	db 5,1,EARTHQUAKE
+	;poliwrath - submission, amnesia, psychic, surf
 	db 0
 
 	db AGATHA,$1
-	;haunter - confuse ray, mimic, hypnosis, dream eater
-	db 1,2,MIMIC
-	;gengar - confuse ray, substitute, thunderbolt, mega drain
-	db 2,2,SUBSTITUTE
-	db 2,3,THUNDERBOLT
-	db 2,4,MEGA_DRAIN
-	;golbat - screech, confuse ray, double edge, mega drain
+	;gengar - night shade, confuse ray, hypnosis, dream eater
+	db 1,2,CONFUSE_RAY
+	;tentacruel - sludge, surf, confuse ray, blizzard
+	db 2,1,SLUDGE
+	;golbat - screech, confuse ray, razor wind, sludge
 	db 3,1,SCREECH
-	db 3,3,DOUBLE_EDGE
-	db 3,4,MEGA_DRAIN
+	db 3,3,RAZOR_WIND
+	db 3,4,SLUDGE
 	;arbok - earthquake, glare, screech, sludge
 	db 4,1,EARTHQUAKE
 	;gengar - confuse ray, night shade, hypnosis, dream eater
 	db 5,2,NIGHT_SHADE
+	;weezing - sludge, toxic, flamethrower, thunderbolt
 	db 0
 
 	db LANCE,$1
 	;gyarados - dragon rage, slam, hydro pump, hyperbeam
-	db 1,2,BITE
-	;dragonite - thunder wave, reflect, thunderbolt, hyperbeam
+	db 1,2,HYDRO_PUMP
+	;dragonite - thunder wave, slam, thunderbolt, hyperbeam
 	db 2,1,THUNDER_WAVE
-	db 2,2,REFLECT
+	db 2,2,SLAM
 	db 2,3,THUNDERBOLT
-	;dragonite - surf, body slam, ice beam, hyperbeam
+	;dragonite - surf, slam, ice beam, hyperbeam
 	db 3,1,SURF
-	db 3,2,BODY_SLAM
+	db 3,2,SLAM
 	db 3,3,ICE_BEAM
 	;aerodactyl - rock slide, fire blast, razor wind, hyperbeam
 	db 4,2,FIRE_BLAST
@@ -243,7 +241,7 @@ SpecialTrainerMoves:
 	db 1,2,TRI_ATTACK
 	db 1,3,MIMIC
 	db 1,4,DOUBLE_TEAM
-	;alakazam - thunderwave, recover, psychic, reflect
+	;alakazam - thunderwave, recover, psychic, kinesis
 	db 2,1,THUNDER_WAVE
 	;rhydon
 	db 3,1,THUNDERBOLT
@@ -254,9 +252,9 @@ SpecialTrainerMoves:
 	db 4,1,REFLECT
 	db 4,2,REST
 	db 4,3,DOUBLE_EDGE
-	;exeggutor - leech seed, stomp, mega drain, hypnosis
+	;exeggutor - leech seed, dream eater, mega drain, hypnosis
 	db 5,1,LEECH_SEED
-	;blastoise - blizzard, reflect, skull bash, hydro pump
+	;blastoise - blizzard, reflect, skull bash, surf
 	db 6,1,BLIZZARD
 	db 6,2,REFLECT
 	db 0
@@ -281,7 +279,7 @@ SpecialTrainerMoves:
 	db 5,1,REFLECT
 	db 5,2,REST
 	db 5,3,BODY_SLAM
-	;venusaur - razor leaf, toxic, sleep powder, solar beam
+	;venusaur - razor leaf, toxic, sleep powder, mega drain
 	db 6,2,TOXIC
 	db 0
 
@@ -298,14 +296,14 @@ SpecialTrainerMoves:
 	db 3,2,EARTHQUAKE
 	db 3,3,ROCK_SLIDE
 	db 3,4,TAKE_DOWN
-	;exeggutor - leech seed, stomp, solar beam, hypnosis
+	;exeggutor - leech seed, mega drain, dream eater, hypnosis
 	db 4,1,LEECH_SEED
 	;gyarados - ice beam, body slam, hydro pump, hyperbeam
 	db 5,1,ICE_BEAM
 	db 5,2,BODY_SLAM
-	;charizard - fly, slash, fire blast, fire spin
-	db 6,1,FLY
-	db 6,3,FIRE_BLAST
+	;charizard - razor wind, slash, flamethrower, fire spin
+	db 6,1,RAZOR_WIND
+	db 6,3,FLAMETHROWER
 	db 0
 
 	;prof oak's pokemon
