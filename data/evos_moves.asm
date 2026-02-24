@@ -1796,7 +1796,7 @@ AbraEvosMoves:
 	db EV_LEVEL, 16, KADABRA
 	db 0
 ; Learnset
-	db 12 CONFUSION
+	db 0
 
 AlakazamEvosMoves:
 ; Evolutions
