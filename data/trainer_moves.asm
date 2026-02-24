@@ -213,23 +213,28 @@ SpecialTrainerMoves:
 	db 0
 
 	db LANCE,$1
-	;gyarados - dragon rage, bite, hydro pump, hyperbeam
+	;gyarados - dragon rage, slam, hydro pump, hyperbeam
 	db 1,2,BITE
-	;dragonair - thunder wave, reflect, thunderbolt, hyperbeam
+	;dragonite - thunder wave, reflect, thunderbolt, hyperbeam
 	db 2,1,THUNDER_WAVE
 	db 2,2,REFLECT
 	db 2,3,THUNDERBOLT
-	;dragonair - surf, body slam, ice beam, hyperbeam
+	;dragonite - surf, body slam, ice beam, hyperbeam
 	db 3,1,SURF
 	db 3,2,BODY_SLAM
 	db 3,3,ICE_BEAM
-	;aerodactyl - rock slide, fire blast, fly, hyperbeam
+	;aerodactyl - rock slide, fire blast, razor wind, hyperbeam
 	db 4,2,FIRE_BLAST
 	db 4,3,FLY
 	;dragonite - blizzard, fire blast, thunder, hyperbeam
 	db 5,1,BLIZZARD
 	db 5,2,FIRE_BLAST
 	db 5,3,THUNDER
+	;seadra - rage, slam, surf, ice beam
+	DB 6,1,RAGE
+	db 6,2,SLAM
+	db 6,3,SURF
+	db 6,4,ICE_BEAM
 	db 0
 
 	db SONY3,$1
@@ -249,7 +254,7 @@ SpecialTrainerMoves:
 	db 4,1,REFLECT
 	db 4,2,REST
 	db 4,3,DOUBLE_EDGE
-	;exeggutor - leech seed, stomp, solar beam, hypnosis
+	;exeggutor - leech seed, stomp, mega drain, hypnosis
 	db 5,1,LEECH_SEED
 	;blastoise - blizzard, reflect, skull bash, hydro pump
 	db 6,1,BLIZZARD
@@ -305,7 +310,7 @@ SpecialTrainerMoves:
 
 	;prof oak's pokemon
 	db PROF_OAK,$1
-	;tauros - tail whip, earthquake, thunderbolt, hyperbeam
+	;tauros - body slam, earthquake, thunderbolt, hyperbeam
 	db 1,2,EARTHQUAKE
 	db 1,3,THUNDERBOLT
 	db 1,4,HYPER_BEAM
@@ -394,17 +399,17 @@ SpecialTrainerMoves:
 	db 3,1,AMNESIA
 	db 3,2,BLIZZARD
 	db 3,3,SURF
-	db 3,4,MIMIC
+	db 3,4,PSYCHIC
 	;pinsir
 	db 4,1,SLASH
 	db 4,2,SWORDS_DANCE
-	db 4,3,SEISMIC_TOSS
+	db 4,3,TWINEEDLE
 	db 4,4,BODY_SLAM
 	;scyther
 	db 5,1,SWORDS_DANCE
 	db 5,2,SLASH
 	db 5,3,AGILITY
-	db 5,4,DOUBLE_EDGE
+	db 5,4,RAZOR_WIND
 	;tauros
 	db 6,1,HYPER_BEAM
 	db 6,2,DOUBLE_EDGE
