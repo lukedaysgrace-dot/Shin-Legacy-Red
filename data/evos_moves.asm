@@ -499,12 +499,13 @@ ScytherEvosMoves:
 	db 0
 ; Learnsetjoenote-modified for yellow
 	db 17, LEER
-	db 20, FOCUS_ENERGY
+	db 22, WING_ATTACK
 	db 24, DOUBLE_TEAM
 	db 29, SLASH
 	db 35, SWORDS_DANCE
 	db 42, AGILITY
-	db 50, WING_ATTACK
+	db 44, TWINEEDLE
+	db 50, SWORDS_DANCE
 	db 0
 
 StaryuEvosMoves:
@@ -539,6 +540,7 @@ PinsirEvosMoves:
 ; Learnset;joenote-modified for yellow
 	db 21, BIND
 	db 25, SEISMIC_TOSS
+	db 28. LEECH_LIFE
 	db 30, GUILLOTINE
 	db 36, FOCUS_ENERGY
 	db 43, HARDEN
