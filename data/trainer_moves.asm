@@ -191,8 +191,9 @@ SpecialTrainerMoves:
 	db 3,1,HI_JUMP_KICK
 	;golem - earthquake, rock slide, body slam, explosion
 	db 4,1,ROCK_SLIDE
-	;machamp - earthquake, focus energy, rock slide, submission
+	;machamp - earthquake, guillotine, rock slide, submission
 	db 5,1,EARTHQUAKE
+	db 5,2,GUILLOTINE
 	;poliwrath - submission, amnesia, psychic, surf
 	db 0
 

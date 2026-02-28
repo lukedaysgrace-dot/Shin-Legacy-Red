@@ -679,9 +679,9 @@ MachokeEvosMoves:
 ; Learnset
 	db 20, LOW_KICK
 	db 25, LEER
-	db 36, FOCUS_ENERGY
-	db 44, SEISMIC_TOSS
-	db 52, SUBMISSION
+	db 28, FOCUS_ENERGY
+	db 30, SEISMIC_TOSS
+	db 34, SUBMISSION
 	db 0
 
 MrMimeEvosMoves:
@@ -1586,8 +1586,9 @@ MachampEvosMoves:
 	db 20, LOW_KICK
 	db 25, LEER
 	db 36, FOCUS_ENERGY
-	db 44, SEISMIC_TOSS
-	db 52, SUBMISSION
+	db 40, SEISMIC_TOSS
+	db 42, SUBMISSION
+	db 45, GUILLOTINE
 	db 0
 
 MissingNo7FEvosMoves:
