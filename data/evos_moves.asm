@@ -541,7 +541,6 @@ PinsirEvosMoves:
 ; Learnset;joenote-modified for yellow
 	db 21, BIND
 	db 25, SEISMIC_TOSS
-	db 28. LEECH_LIFE
 	db 30, GUILLOTINE
 	db 36, FOCUS_ENERGY
 	db 43, HARDEN
@@ -2059,7 +2058,6 @@ AerodactylEvosMoves:
 	db 33, SUPERSONIC
 	db 36, WING ATTACK
 	db 38, BITE
-	db 42, ROCK_SLIDE
 	db 45, TAKE_DOWN
 	db 54, HYPER_BEAM
 	db 0
