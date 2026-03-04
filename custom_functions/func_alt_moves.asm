@@ -354,6 +354,9 @@ EvosMovesPointerTable_Alt:
 	dw BellsproutEvosMoves_Alt
 	dw WeepinbellEvosMoves_Alt
 	dw VictreebelEvosMoves_Alt
+	dw RaltsEvosMoves_Alt
+	dw KirliaEvosMoves_Alt
+	dw GardevoirEvosMoves_Alt
 	dw $FFFF
 
 	
@@ -2163,6 +2166,45 @@ MewEvosMoves_Alt:
     db 50, BODY_SLAM
     db 55, SWORDS_DANCE
     db 60, EARTHQUAKE 
+	db 0
+
+RaltsEvosMoves_Alt:
+    db 1, TELEPORT
+    db 1, CONFUSION
+    db 1, DISABLE
+    db 16, CONFUSION
+    db 20, REFLECT
+    db 27, PSYBEAM
+    db 29, THUNDER_WAVE
+    db 31, RECOVER
+    db 38, PSYCHIC_M
+    db 42, SEISMIC_TOSS 
+	db 0
+
+KirliaEvosMoves_Alt:
+    db 1, TELEPORT
+    db 1, CONFUSION
+    db 1, DISABLE
+    db 16, CONFUSION
+    db 20, REFLECT
+    db 27, PSYBEAM
+    db 29, THUNDER_WAVE
+    db 31, RECOVER
+    db 38, PSYCHIC_M
+    db 42, SEISMIC_TOSS 
+	db 0
+
+GardevoirEvosMoves_Alt:
+    db 1, TELEPORT
+    db 1, CONFUSION
+    db 1, DISABLE
+    db 16, CONFUSION
+    db 20, REFLECT
+    db 27, PSYBEAM
+    db 29, THUNDER_WAVE
+    db 31, RECOVER
+    db 38, PSYCHIC_M
+    db 42, SEISMIC_TOSS 
 	db 0
 
 MissingNo1FEvosMoves_Alt:

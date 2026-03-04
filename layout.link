@@ -169,7 +169,13 @@ ROMX $30
   
 ROMX $31
   "Pics 7" ; PICS_7
-  
+
+ROMX $32
+  "bank32"
+
+ROMX $99
+  "Pics 8" ; PICS_8
+
 WRAM0
   "WRAM Bank 0"
 
@@ -184,4 +190,3 @@ SRAM 2
 
 SRAM 3
   "Saved Boxes 2"
-

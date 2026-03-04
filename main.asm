@@ -12,7 +12,7 @@ PICS_4 EQU $C
 PICS_5 EQU $D
 PICS_6 EQU $30
 PICS_7 EQU $31
-
+PICS_8 EQU $99
 INCLUDE "home.asm"
 
 
@@ -1959,6 +1959,10 @@ INCLUDE "constants/pic_banks/pic6.asm"
 
 SECTION "Pics 7", ROMX, BANK[PICS_7]
 INCLUDE "constants/pic_banks/pic7.asm"
+
+SECTION "Pics 8", ROMX, BANK[PICS_8]
+INCLUDE "constants/pic_banks/pic8.asm"
+
 MissingnoPic::         INCBIN "pic/other/missingno.pic"
 IF DEF(_SWBACKS)
 	RedPicBack::           INCBIN "pic/swtrainerback/redb.pic"

@@ -190,3 +190,6 @@ CryData:
 	db $21, $55, $01; Bellsprout
 	db $25, $44, $20; Weepinbell
 	db $25, $66, $CC; Victreebel
+	db $19, $3C, $01; Ralts
+	db $19, $3C, $01; Kirlia
+	db $19, $3C, $01; Gardevoir

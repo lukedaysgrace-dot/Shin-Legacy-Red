@@ -1252,6 +1252,27 @@ VictreebelDexEntry:
 	TX_FAR _VictreebelDexEntry
 	db "@"
 
+RaltsDexEntry:
+	db "FEELINGS@"
+	db 1,4
+	dw 14
+	TX_FAR _RaltsDexEntry
+	db "@"
+
+KirliaDexEntry:
+	db "EMOTIONS@"
+	db 2,7
+	dw 44
+	TX_FAR _KirliaDexEntry
+	db "@"
+
+GardevoirDexEntry:
+	db "EMBRACE@"
+	db 5,3
+	dw 106
+	TX_FAR _GardevoirDexEntry
+	db "@"
+
 MissingNoDexEntry:
 	db "???@"
 	db 10 ; 1.0 m

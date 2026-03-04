@@ -190,3 +190,6 @@ const_value = 1
 	const BELLSPROUT   ; $BC
 	const WEEPINBELL   ; $BD
 	const VICTREEBEL   ; $BE
+	const RALTS	   ; $BF
+	const KIRLIA       ; $C0
+	const GARDEVOIR    ; $C1

@@ -169,6 +169,24 @@ ENDC
 	RGB  1, 22,  6
 	RGB  3,  3,  3
 
+	; PAL_RALTMON
+	RGB 31, 31, 31
+	RGB  0, 31,  0
+	RGB 31,  0,  0
+	RGB  0,  0,  0
+
+	; PAL_KIRLMON
+	RGB 31, 31, 31
+	RGB  0, 31,  0
+	RGB 31,  0,  0
+	RGB  0,  0,  0
+
+	; PAL_GARDMON
+	RGB 31, 31, 31
+	RGB 31,  0,  0
+	RGB  0, 31,  7
+	RGB  0,  0,  0
+
 	; PAL_PINKMON
 	RGB 31, 31, 31
 	RGB 31, 15, 18

@@ -1,0 +1,6 @@
+RaltsPicFront::    INCBIN "pic/bmon/ralts.pic"
+RaltsPicBack::     INCBIN "pic/monback/raltsb.pic"
+KirliaPicFront::   INCBIN "pic/bmon/kirlia.pic"
+KirliaPicBack::    INCBIN "pic/monback/kirliab.pic"
+GardevoirPicFront::INCBIN "pic/bmon/gardevoir.pic"
+GardevoirPicBack:: INCBIN "pic/monback/gardevoirb.pic"

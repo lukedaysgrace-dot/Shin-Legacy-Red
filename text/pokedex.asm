@@ -1512,3 +1512,33 @@ _VictreebelDexEntry::
 	next "from there"
 	dex
 
+_RaltsDexEntry::
+	text "Senses peoples"
+	next "emotions with"
+	next "its horn"
+
+	page "draws closer"
+	next "to those with"
+	next "positive energy"
+	dex
+
+_KirliaDexEntry::
+	text "It is said that"
+	next "kirlia becomes"
+	next "more beautiful"
+
+	page "when exposed"
+	next "to a trainer with"
+	next "positive emotions"
+	dex
+
+_GardevoirDexEntry::
+	text "Has the ability"
+	next "to read the"
+	next "future if its"
+	
+	page "trainer is in"
+	next "danger it uses"
+	next "all its power"
+
+

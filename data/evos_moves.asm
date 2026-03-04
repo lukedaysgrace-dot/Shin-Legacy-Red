@@ -192,6 +192,9 @@ EvosMovesPointerTable:
 	dw BellsproutEvosMoves
 	dw WeepinbellEvosMoves
 	dw VictreebelEvosMoves
+	dw RaltsEvosMoves
+	dw KirliaEvosMoves
+	dw GardevoirEvosMoves
 	dw $FFFF	;joenote - added a list terminator for specific uses
 
 RhydonEvosMoves:
@@ -2250,3 +2253,34 @@ VictreebelEvosMoves:
 	db 37, ACID
 	db 44, RAZOR_LEAF
 	db 0
+
+RaltsEvosMoves:
+; Evolutions
+	db EV_LEVEL, 20, KIRLIA
+	db 0
+; Learnset
+	db 13, DISABLE
+	db 18, BARRIER
+	db 0
+
+KirliaEvosMoves:
+; Evolutions
+	db EV_LEVEL, 34, GARDEVOIR
+	db 0
+; Learnset
+	db 27, PSYBEAM
+	db 30, REFLECT
+	db 34, RECOVER
+	db 0
+
+GardevoirEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 27, PSYBEAM
+	db 30, REFLECT
+	db 34, RECOVER
+	db 39, PSYCHIC
+	db 46, KINESIS
+	db 0
+

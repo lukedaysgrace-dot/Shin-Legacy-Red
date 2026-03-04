@@ -75,3 +75,5 @@ MonPartyData:
 	dn SPRITE_SNAKE, SPRITE_SNAKE           ;Dratini/Dragonair
 	dn SPRITE_SNAKE, SPRITE_MON             ;Dragonite/Mewtwo
 	dn SPRITE_MON, 0                        ;Mew/Padding
+	dn SPRITE_QUADRUPED, SPRITE_MON		;Ralts/Kirlia
+	dn SPRITE_QUADRUPED, SPRITE_MON		;Gardevoir
