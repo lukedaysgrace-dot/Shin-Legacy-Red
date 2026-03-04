@@ -183,9 +183,9 @@ ENDC
 
 	; PAL_GARDMON
 	RGB 31, 31, 31
-	RGB 31,  0,  0
-	RGB  0, 31,  7
 	RGB  0,  0,  0
+	RGB  0, 31,  7
+	RGB 31,  0,  0
 
 	; PAL_PINKMON
 	RGB 31, 31, 31
