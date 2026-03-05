@@ -189,6 +189,12 @@ PokedexEntryPointers:
 	dw BellsproutDexEntry
 	dw WeepinbellDexEntry
 	dw VictreebelDexEntry
+	dw RaltsDexEntry
+	dw KirliaDexEntry
+	dw GardevoirDexEntry
+	dw BagonDexEntry
+	dw ShelgonDexEntry
+	dw SalamenceDexEntry
 
 ; string: species name
 ; height in meters, centimeters (0 to 99)
@@ -1251,6 +1257,49 @@ VictreebelDexEntry:
 	dw 155
 	TX_FAR _VictreebelDexEntry
 	db "@"
+
+RaltsDexEntry:
+    db "FEELING@"
+    db 1,4
+    dw 15
+    TX_FAR _RaltsDexEntry
+    db "@"
+
+KirliaDexEntry:
+    db "EMOTION@"
+    db 2,7
+    dw 44
+    TX_FAR _KirliaDexEntry
+    db "@"
+
+GardevoirDexEntry:
+    db "EMBRACE@"
+    db 5,3
+    dw 106
+    TX_FAR _GardevoirDexEntry
+    db "@"
+
+
+BagonDexEntry:
+    db "ROCK HEAD@"
+    db 2,0
+    dw 93
+    TX_FAR _BagonDexEntry
+    db "@"
+
+ShelgonDexEntry:
+    db "ENDURANCE@"
+    db 3,7
+    dw 243
+    TX_FAR _ShelgonDexEntry
+    db "@"
+
+SalamenceDexEntry:
+    db "DRAGON@"
+    db 4,11
+    dw 226
+    TX_FAR _SalamenceDexEntry
+    db "@"
 
 MissingNoDexEntry:
 	db "???@"

@@ -1541,4 +1541,32 @@ _GardevoirDexEntry::
 	next "danger it uses"
 	next "all its power"
 
+_BagonDexEntry::
+    text "It dreams of"
+    next "flying through"
+    next "the sky but"
+    page "cannot yet."
+    next "It leaps from"
+    next "cliffs trying"
+    next "to grow wings."
+    dex
 
+_ShelgonDexEntry::
+    text "Its body is"
+    next "sealed inside"
+    next "a hard shell."
+    page "Cells within"
+    next "transform to"
+    next "prepare for"
+    next "evolution."
+    dex
+
+_SalamenceDexEntry::
+    text "After years of"
+    next "dreaming of"
+    next "flight it grew"
+    page "wings at last."
+    next "It soars the"
+    next "sky breathing"
+    next "flames below."
+    dex

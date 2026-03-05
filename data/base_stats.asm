@@ -152,4 +152,7 @@ INCLUDE "data/baseStats/mew.asm"	;mew should have been put here had it not been 
 INCLUDE "data/baseStats/ralts.asm"
 INCLUDE "data/baseStats/kirlia.asm"
 INCLUDE "data/baseStats/gardevoir.asm"
+INCLUDE "data/baseStats/bagon.asm"
+INCLUDE "data/baseStats/shelgon.asm"
+INCLUDE "data/baseStats/salamence.asm"
 INCLUDE "data/baseStats/missingno.asm"	;joenote - added basestats for missingno

@@ -195,6 +195,9 @@ EvosMovesPointerTable:
 	dw RaltsEvosMoves
 	dw KirliaEvosMoves
 	dw GardevoirEvosMoves
+	dw BagonEvosMoves
+	dw ShelgonEvosMoves
+	dw SalamenceEvosMoves
 	dw $FFFF	;joenote - added a list terminator for specific uses
 
 RhydonEvosMoves:
@@ -947,7 +950,7 @@ DragoniteEvosMoves:
 	db 10, THUNDER_WAVE
 	db 20, AGILITY
 	db 35, SLAM
-	db 45, DRAGON_RAGE
+	db 45, RAZOR_WIND
 	db 60, HYPER_BEAM
 	db 0
 
@@ -2284,3 +2287,36 @@ GardevoirEvosMoves:
 	db 46, KINESIS
 	db 0
 
+BagonEvosMoves:
+; Evolutions
+	db EV_LEVEL, 25, SHELGON
+	db 0
+; Learnset
+	db 10, BITE
+	db 15, RAGE
+	db 19, HEADBUTT
+	db 22, DRAGON_RAGE
+	db 25, SLAM
+	db 50, HYPER_BEAM
+	db 0
+
+ShelgonEvosMoves:
+; Evolutions
+	db EV_LEVEL, 45, SALAMENCE
+	db 0
+; Learnset
+	db 25, SLAM
+	db 28, WATERFALL
+	db 35, FLAMETHROWER
+	db 45, RAZOR_WIND
+	db 0
+
+SalamenceEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 21, DRAGON_RAGE
+	db 25, SLAM
+	db 45, RAZOR_WIND
+	db 50, HYPER_BEAM
+	db 0

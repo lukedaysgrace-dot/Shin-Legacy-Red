@@ -192,4 +192,7 @@ PokedexOrder:
 	db DEX_RALTS
 	db DEX_KIRLIA
 	db DEX_GARDEVOIR
+	db DEX_BAGON
+	db DEX_SHELGON
+	db DEX_SALAMENCE
 	

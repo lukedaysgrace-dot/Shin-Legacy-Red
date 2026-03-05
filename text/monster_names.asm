@@ -192,3 +192,7 @@ MonsterNames:
 	db "RALTS@@@@@"
 	db "KIRLIA@@@@"
 	db "GARDEVOIR@"
+	db "BAGON@@@@@"
+	db "SHELGON@@@"
+	db "SALAMENCE@"
+	
