@@ -154,6 +154,9 @@ const_value = 1
 	const DEX_RALTS      ; 152
 	const DEX_KIRLIA     ; 153
 	const DEX_GARDEVOIR  ; 154
+	const DEX_BAGON      ; 155
+	const DEX_SHELGON    ; 156
+	const DEX_SALAMENCE  ; 157
 	
 
-NUM_POKEMON    EQU 154
+NUM_POKEMON    EQU 157

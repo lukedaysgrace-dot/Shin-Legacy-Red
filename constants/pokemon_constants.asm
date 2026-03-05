@@ -193,3 +193,6 @@ const_value = 1
 	const RALTS	   ; $BF
 	const KIRLIA       ; $C0
 	const GARDEVOIR    ; $C1
+	const BAGON	   ; $C2
+	const SHELGON	   ; $C3
+	CONST SALAMENCE    ; $C4
