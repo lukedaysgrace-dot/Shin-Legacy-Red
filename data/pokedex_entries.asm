@@ -1274,25 +1274,25 @@ GardevoirDexEntry:
 	db "@"
 
 BagonDexEntry:
-    db "ROCK HEAD@"
-    db 2,0
-    dw 93
-    TX_FAR _BagonDexEntry
-    db "@"
+   	db "ROCK HEAD@"
+    	db 2,0
+    	dw 93
+    	TX_FAR _BagonDexEntry
+    	db "@"
 
 ShelgonDexEntry:
-    db "ENDURANCE@"
-    db 3,7
-    dw 243
-    TX_FAR _ShelgonDexEntry
-    db "@"
+    	db "ENDURANCE@"
+    	db 3,7
+    	dw 243
+    	TX_FAR _ShelgonDexEntry
+    	db "@"
 
 SalamenceDexEntry:
-    db "DRAGON@"
-    db 4,11
-    dw 226
-    TX_FAR _SalamenceDexEntry
-    db "@"
+    	db "DRAGON@"
+    	db 4,11
+    	dw 226
+    	TX_FAR _SalamenceDexEntry
+    	db "@"
 
 MissingNoDexEntry:
 	db "???@"

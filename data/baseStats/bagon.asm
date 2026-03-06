@@ -8,7 +8,7 @@ db DRAGON ; species type 1
 db DRAGON ; species type 2
 db 200 ; catch rate
 db 67 ; base exp yield
-INCBIN ABRA_FR,0,1 ; 55, sprite dimensions
+INCBIN "pic/bmon/bagon.pic",0,1 ; 55, sprite dimensions
 dw BagonPicFront
 dw BagonPicBack
 ; attacks known at lvl 0

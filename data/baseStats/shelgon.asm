@@ -8,7 +8,7 @@ db DRAGON ; species type 1
 db DRAGON ; species type 2
 db 200 ; catch rate
 db 144 ; base exp yield
-INCBIN SHELGON_FR,0,1 ; 66, sprite dimensions
+INCBIN "pic/bmon/shelgon.pic",0,1 ; 66, sprite dimensions
 dw ShelgonPicFront
 dw ShelgonPicBack
 ; attacks known at lvl 0

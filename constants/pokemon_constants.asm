@@ -195,4 +195,4 @@ const_value = 1
 	const GARDEVOIR    ; $C1
 	const BAGON	   ; $C2
 	const SHELGON	   ; $C3
-	CONST SALAMENCE    ; $C4
+	const SALAMENCE    ; $C4
