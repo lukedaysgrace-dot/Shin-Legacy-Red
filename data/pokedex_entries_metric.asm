@@ -1,3 +1,10 @@
+_RaltsDexEntry:
+_KirliaDexEntry:
+_GardevoirDexEntry:
+_BagonDexEntry:
+_ShelgonDexEntry:
+_SalamenceDexEntry:
+
 PokedexEntryPointers:
 	dw RhydonDexEntry
 	dw KangaskhanDexEntry

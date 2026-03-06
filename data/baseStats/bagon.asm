@@ -6,7 +6,7 @@ db 50 ; base speed
 db 40 ; base special
 db DRAGON ; species type 1
 db DRAGON ; species type 2
-db 200 ; catch rate
+db 255 ; catch rate
 db 67 ; base exp yield
 INCBIN "pic/bmon/bagon.pic",0,1 ; 55, sprite dimensions
 dw BagonPicFront

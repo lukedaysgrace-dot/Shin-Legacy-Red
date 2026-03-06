@@ -195,4 +195,3 @@ PokedexOrder:
 	db DEX_BAGON
 	db DEX_SHELGON
 	db DEX_SALAMENCE
-	

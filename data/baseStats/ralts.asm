@@ -6,7 +6,7 @@ db 40 ; base speed
 db 45 ; base special
 db PSYCHIC ; species type 1
 db PSYCHIC ; species type 2
-db 235 ; catch rate
+db 255 ; catch rate
 db 40 ; base exp yield
 INCBIN "pic/bmon/ralts.pic",0,1 ; 55, sprite dimensions
 dw RaltsPicFront

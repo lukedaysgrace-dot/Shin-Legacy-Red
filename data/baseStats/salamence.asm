@@ -6,11 +6,11 @@ db 100 ; base speed
 db 90 ; base special
 db DRAGON ; species type 1
 db FLYING ; species type 2
-db 200 ; catch rate
+db 255 ; catch rate
 db 218 ; base exp yield
-INCBIN "pic/bmon/salamence.pic",0,1 ; 66, sprite dimensions
-dw ShelgonPicFront
-dw ShelgonPicBack
+INCBIN "pic/bmon/salamence.pic",0,1 ; 77, sprite dimensions
+dw SalamencePicFront
+dw SalamencePicBack
 ; attacks known at lvl 0
 db EMBER
 db TACKLE

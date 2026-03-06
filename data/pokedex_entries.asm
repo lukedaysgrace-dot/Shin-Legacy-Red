@@ -189,6 +189,12 @@ PokedexEntryPointers:
 	dw BellsproutDexEntry
 	dw WeepinbellDexEntry
 	dw VictreebelDexEntry
+	dw RaltsDexEntry
+	dw KirliaDexEntry
+	dw GardevoirDexEntry
+	dw BagonDexEntry
+	dw ShelgonDexEntry
+	dw SalamenceDexEntry
 
 ; string: species name
 ; height in feet, inches

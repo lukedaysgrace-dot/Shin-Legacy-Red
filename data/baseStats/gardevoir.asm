@@ -6,7 +6,7 @@ db 80 ; base speed
 db 125 ; base special
 db PSYCHIC ; species type 1
 db PSYCHIC ; species type 2
-db 190 ; catch rate
+db 255 ; catch rate
 db 233 ; base exp yield
 INCBIN "pic/bmon/gardevoir.pic",0,1 ; 77, sprite dimensions
 dw GardevoirPicFront

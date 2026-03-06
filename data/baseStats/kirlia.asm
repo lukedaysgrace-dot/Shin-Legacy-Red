@@ -6,7 +6,7 @@ db 50 ; base speed
 db 65 ; base special
 db PSYCHIC ; species type 1
 db PSYCHIC ; species type 2
-db 235 ; catch rate
+db 255 ; catch rate
 db 97 ; base exp yield
 INCBIN "pic/bmon/kirlia.pic",0,1 ; 77, sprite dimensions
 dw KirliaPicFront

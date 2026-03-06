@@ -169,42 +169,6 @@ ENDC
 	RGB  1, 22,  6
 	RGB  3,  3,  3
 
-	; PAL_RALTMON
-	RGB 31, 31, 31
-	RGB  0, 31,  0
-	RGB 31,  0,  0
-	RGB  0,  0,  0
-
-	; PAL_KIRLMON
-	RGB 31, 31, 31
-	RGB  0, 31,  0
-	RGB 31,  0,  0
-	RGB  0,  0,  0
-
-	; PAL_GARDMON
-	RGB 31, 31, 31
-	RGB  0,  0,  0
-	RGB  0, 31,  7
-	RGB 31,  0,  0
-
-	; PAL_BAGOMON
-	RGB 31, 31, 31
-	RGB  0,  0,  0
-	RGB 31, 31, 25
-	RGB 11, 12, 20
-
-	; PAL_SHELMON
-	RGB 31, 31, 31
-	RGB 30, 31, 26
-	RGB  0,  0,  0
-	RGB 24,  0,  7
-	
-	; PAL_SALAMON
-	RGB 31, 31, 31
-	RGB  0,  0,  0
-	RGB 22,  0,  0
-	RGB  0, 18, 21
-
 	; PAL_PINKMON
 	RGB 31, 31, 31
 	RGB 31, 15, 18
@@ -373,4 +337,40 @@ ENDC
 	RGB 24, 24, 24
 	RGB  8,  8,  8
 	RGB  3,  3,  3
+
+	; PAL_RALTMON
+	RGB 31, 31, 31
+	RGB  0, 31,  0
+	RGB 31,  0,  0
+	RGB  0,  0,  0
+
+	; PAL_KIRLMON
+	RGB 31, 31, 31
+	RGB  0, 31,  0
+	RGB 31,  0,  0
+	RGB  0,  0,  0
+
+	; PAL_GARDMON
+	RGB 31, 31, 31
+	RGB  0, 31,  0
+	RGB 31,  0,  0
+	RGB  0,  0,  0
+
+	; PAL_BAGOMON
+	RGB 31, 31, 31
+	RGB 31, 31, 24
+	RGB 11, 12, 20
+	RGB  0,  0,  0
+
+	; PAL_SHELMON
+	RGB 31, 31, 31
+	RGB 30, 31, 26
+	RGB 31,  0, 11
+	RGB  0,  0,  0
+	
+	; PAL_SALAMON
+	RGB 31, 31, 31
+	RGB  0, 18, 23
+	RGB 25,  0,  0
+	RGB  0,  0,  0
 	

@@ -1,9 +1,9 @@
 Route1Mons:
 	db $19
-	db 3,RALTS
+	db 3,KIRLIA
 	db 3,KIRLIA
 	db 3,BAGON
-	db 2,BAGON
+	db 2,GARDEVOIR
 	db 2,RALTS
 	db 3,SHELGON
 	db 3,SALAMENCE

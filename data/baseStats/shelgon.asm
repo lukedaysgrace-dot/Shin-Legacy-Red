@@ -6,7 +6,7 @@ db 50 ; base speed
 db 60 ; base special
 db DRAGON ; species type 1
 db DRAGON ; species type 2
-db 200 ; catch rate
+db 255 ; catch rate
 db 144 ; base exp yield
 INCBIN "pic/bmon/shelgon.pic",0,1 ; 66, sprite dimensions
 dw ShelgonPicFront

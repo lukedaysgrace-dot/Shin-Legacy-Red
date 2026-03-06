@@ -47,30 +47,30 @@ const_value = 0
 	const PAL_PURPLEMON ; $14
 	const PAL_BROWNMON  ; $15
 	const PAL_GREENMON  ; $16
-	const PAL_RALTMON   ; $17
-	const PAL_KIRLMON   ; $18
-	const PAL_GARDMON   ; $19
-	const PAL_PINKMON   ; $1A
-	const PAL_YELLOWMON ; $1B
-	const PAL_GREYMON   ; $1C
-	const PAL_BAGOMON   ; $1D
-	const PAL_SHELMON   ; $1E
-	const PAL_SALAMON   ; $1F
-	const PAL_SLOTS1    ; $20
-	const PAL_SLOTS2    ; $21
-	const PAL_SLOTS3    ; $22
-	const PAL_SLOTS4    ; $23
-	const PAL_BLACK     ; $24
-	const PAL_GREENBAR  ; $25
-	const PAL_YELLOWBAR ; $26
-	const PAL_REDBAR    ; $27
-	const PAL_BADGE     ; $28
-	const PAL_CAVE      ; $29
-	const PAL_GAMEFREAK ; $30
+	const PAL_PINKMON   ; $17
+	const PAL_YELLOWMON ; $18
+	const PAL_GREYMON   ; $19
+	const PAL_SLOTS1    ; $1A
+	const PAL_SLOTS2    ; $1B
+	const PAL_SLOTS3    ; $1C
+	const PAL_SLOTS4    ; $1D
+	const PAL_BLACK     ; $1E
+	const PAL_GREENBAR  ; $1F
+	const PAL_YELLOWBAR ; $20
+	const PAL_REDBAR    ; $21
+	const PAL_BADGE     ; $22
+	const PAL_CAVE      ; $23
+	const PAL_GAMEFREAK ; $24
 ;gbcnote - added from yellow
-	const PAL_25        ; $31
-	const PAL_26        ; $32
-	const PAL_27        ; $33
+	const PAL_25        ; $25
+	const PAL_26        ; $26
+	const PAL_27        ; $27
 ;joenote - custom pals
-	const PAL_BW        ; $34	;gbc only
-	const PAL_UBALL		; $35 ;gbc only
+	const PAL_BW        ; $28	;gbc only
+	const PAL_UBALL		; $29	;gbc only
+	const PAL_RALTMON   ; $30
+	const PAL_KIRLMON   ; $31
+	const PAL_GARDMON   ; $32
+	const PAL_BAGOMON   ; $33
+	const PAL_SHELMON   ; $34
+	const PAL_SALAMON   ; $35
