@@ -229,27 +229,37 @@ OlderFileWillBeErasedText:
 ;it does not seem to be called by anything other than SaveSAVtoSRAM
 ;joenote - make it save the party data in order to fix the 255 clone pokemon glitch
 SaveSAVtoSRAM0:
-	ld a, SRAM_ENABLE
-	ld [MBC1SRamEnable], a
-	ld a, $1
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamBank], a
+    ld a, SRAM_ENABLE
+    ld [MBC1SRamEnable], a
+    ld a, $1
+    ld [MBC1SRamBankingMode], a
+    ld [MBC1SRamBank], a
 
-	ld hl, wPlayerName
-	ld de, sPlayerName
-	ld bc, NAME_LENGTH
-	call CopyData
+    ld hl, wPlayerName
+    ld de, sPlayerName
+    ld bc, NAME_LENGTH
+    call CopyData
 
-	ld hl, wMainDataStart
-	ld de, sMainData
-	ld bc, wMainDataEnd - wMainDataStart
-	call CopyData
+    ld hl, wMainDataStart
+    ld de, sMainData
+    ld bc, wMainDataEnd - wMainDataStart
+    call CopyData
 
-	ld hl, wSpriteDataStart
-	ld de, sSpriteData
-	ld bc, wSpriteDataEnd - wSpriteDataStart
-	call CopyData
+    ld hl, wSpriteDataStart
+    ld de, sSpriteData
+    ld bc, wSpriteDataEnd - wSpriteDataStart
+    call CopyData
 
+    ; --- PKHeX compatibility mirror ---
+    ld hl, sPlayerName
+    ld de, $A598
+    ld bc, $0F8B
+    call CopyData
+
+    ld a, $0
+    ld [MBC1SRamBankingMode], a
+    ld [MBC1SRamEnable], a
+    ret
 	;copying the party data here helps fix the 255 pokemon clone glitch
 	;this makes it so that all the data is copied
 	;without this, the checksum gets calculated on inconsistent party data
