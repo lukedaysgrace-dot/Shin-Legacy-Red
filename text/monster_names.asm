@@ -189,3 +189,10 @@ MonsterNames:
 	db "BELLSPROUT"
 	db "WEEPINBELL"
 	db "VICTREEBEL"
+	db "RALTS@@@@@"
+	db "KIRLIA@@@@"
+	db "GARDEVOIR@"
+	db "BAGON@@@@@"
+	db "SHELGON@@@"
+	db "SALAMENCE@"
+	

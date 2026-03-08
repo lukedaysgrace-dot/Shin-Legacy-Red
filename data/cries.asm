@@ -190,3 +190,9 @@ CryData:
 	db $21, $55, $01; Bellsprout
 	db $25, $44, $20; Weepinbell
 	db $25, $66, $CC; Victreebel
+	db $02, $64, $C0; Ralts
+	db $02, $A0, $3C; Kirlia
+	db $19, $3C, $01; Gardevoir
+	db $08, $30, $B8; Bagon
+	db $08, $0A, $3C; Shelgon
+	db $07, $00, $78; Salamence

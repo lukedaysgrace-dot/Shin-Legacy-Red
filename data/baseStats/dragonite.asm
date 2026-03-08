@@ -24,7 +24,7 @@ db 5 ; growth rate
 	tmlearn 25,31,32
 	tmlearn 33,34,38,39,40
 	tmlearn 44,45
-	tmlearn 50,53,54
+	tmlearn 50,52,53,54
 ;	db 0 ; padding
 	db BANK(DragonitePicFront)
 	assert BANK(DragonitePicFront) == BANK(DragonitePicBack)

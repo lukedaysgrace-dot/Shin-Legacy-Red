@@ -1,9 +1,9 @@
 db DEX_BEEDRILL ; pokedex id
 db 75 ; base hp
-db 80 ; base attack
+db 100 ; base attack
 db 60 ; base defense
 db 85 ; base speed
-db 45 ; base special
+db 65 ; base special
 db BUG ; species type 1
 db POISON ; species type 2
 db 45 ; catch rate

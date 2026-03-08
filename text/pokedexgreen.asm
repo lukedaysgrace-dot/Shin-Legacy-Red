@@ -1514,4 +1514,3 @@ _VictreebelDexEntry::
 	next "is melted with a"
 	next "dissolving fluid"
 	dex
-

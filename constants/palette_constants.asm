@@ -68,3 +68,9 @@ const_value = 0
 ;joenote - custom pals
 	const PAL_BW        ; $28	;gbc only
 	const PAL_UBALL		; $29	;gbc only
+	const PAL_RALTMON   ; $30
+	const PAL_KIRLMON   ; $31
+	const PAL_GARDMON   ; $32
+	const PAL_BAGOMON   ; $33
+	const PAL_SHELMON   ; $34
+	const PAL_SALAMON   ; $35

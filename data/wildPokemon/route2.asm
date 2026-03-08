@@ -1,10 +1,10 @@
 Route2Mons:
 	db $19
 	IF DEF(_ENCRED)
-		db 3,RATTATA
+		db 3,GROWLITHE
 		db 3,PIDGEY
 		db 4,PIDGEY
-		db 4,RATTATA
+		db 4,VULPIX
 		db 5,PIDGEY
 		db 3,WEEDLE
 		db 2,RATTATA

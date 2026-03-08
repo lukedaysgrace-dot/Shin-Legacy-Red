@@ -1,9 +1,9 @@
 db DEX_ARCANINE ; pokedex id
 db 90 ; base hp
-db 110 ; base attack
+db 100 ; base attack
 db 80 ; base defense
 db 95 ; base speed
-db 80 ; base special
+db 90 ; base special
 db FIRE ; species type 1
 db FIRE ; species type 2
 db 75 ; catch rate
@@ -24,7 +24,7 @@ db 5 ; growth rate
 ; learnset
 	tmlearn 6,8
 	tmlearn 9,10,15
-	tmlearn 20,23
+	tmlearn 20,23,26
 	tmlearn 28,30,31,32
 	tmlearn 33,34,38,39,40
 	tmlearn 44

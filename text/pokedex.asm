@@ -101,11 +101,9 @@ _ExeggutorDexEntry::
 _LickitungDexEntry::
 	text "Its tongue can be"
 	next "extended like a"
-	next "chameleon's. It"
-
-	page "leaves a tingling"
-	next "sensation when it"
-	next "licks enemies"
+	next "chameleon's"
+	
+	page "It's very pink"
 	dex
 
 _ExeggcuteDexEntry::
@@ -550,12 +548,8 @@ _TaurosDexEntry::
 
 _FarfetchdDexEntry::
 	text "The sprig of"
-	next "green onions it"
-	next "holds is its"
-
-	page "weapon. It is"
-	next "used much like a"
-	next "metal sword"
+	next "green onions is"
+	next "a weapon"
 	dex
 
 _VenonatDexEntry::
@@ -1468,8 +1462,6 @@ _GloomDexEntry::
 	next "mouth isn't drool."
 
 	page "It is a nectar"
-	next "that is used to"
-	next "attract prey"
 	dex
 
 _VileplumeDexEntry::
@@ -1512,3 +1504,62 @@ _VictreebelDexEntry::
 	next "from there"
 	dex
 
+_RaltsDexEntry::
+	text "Senses peoples"
+	next "emotions with"
+	next "its horn"
+
+	page "draws closer"
+	next "to those with"
+	next "positive energy"
+	dex
+
+_KirliaDexEntry::
+	text "It is said that"
+	next "kirlia becomes"
+	next "more beautiful"
+
+	page "when exposed"
+	next "to a trainer with"
+	next "positive emotions"
+	dex
+
+_GardevoirDexEntry::
+	text "Has the ability"
+	next "to read the"
+	next "future if its"
+	
+	page "trainer is in"
+	next "danger it uses"
+	next "all its power"
+	dex
+
+_BagonDexEntry::
+   	 text "It dreams of"
+   	 next "flying through"
+   	 next "the sky it"
+
+	page "leaps from tall"
+	next "heights to try"
+	next "to grow wings"
+	dex
+
+_ShelgonDexEntry::
+   	 text "Its body is"
+   	 next "sealed inside"
+   	 next "a hard shell."
+	
+   	page "It prepares for"
+	next "evolution"
+	dex
+
+_SalamenceDexEntry::
+    	text "After years of"
+    	next "dreaming of"
+    	next "flight it grew"
+	
+    	page "wings at last."
+    	next "It soars the"
+   	next "sky breathing"
+    	next "flames below."
+    	dex

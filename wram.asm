@@ -3512,5 +3512,19 @@ SECTION "Stack", WRAM0[$df00]
 	ds $ff
 wStack:: ; dfff
 
+; Place New Sprite Data at $D000, reserve 240 bytes
+SECTION "New Sprite Data", WRAM0[$D000]
+wNewSpriteData::
+    ds 240 ; 240 bytes
+
+; Place Shadow Data at $D200, reserve 100 bytes
+SECTION "Shadow Data", WRAM0[$D200]
+wShadowData::
+    ds 100 ; 100 bytes
+
+; Place OAM Data at $C600, reserve 80 bytes
+SECTION "OAM Data", WRAM0[$C600]
+wOAMData::
+    ds 80 ; 80 bytes
 
 INCLUDE "sram.asm"
