@@ -220,22 +220,21 @@ SpecialTrainerMoves:
 	db 2,1,THUNDER_WAVE
 	db 2,2,SLAM
 	db 2,3,THUNDERBOLT
-	;dragonite - surf, slam, ice beam, hyperbeam
+	;dragonite - surf, slam, barrier, hyperbeam
 	db 3,1,SURF
 	db 3,2,SLAM
-	db 3,3,ICE_BEAM
-	;aerodactyl - rock slide, fire blast, razor wind, hyperbeam
-	db 4,2,FIRE_BLAST
-	db 4,3,FLY
+	;aerodactyl - rock slide, earthquake, razor wind, hyperbeam
+	db 4,2,EARTHQUAKE
+	db 4,3,RAZOR_WIND
 	;dragonite - blizzard, fire blast, thunder, hyperbeam
 	db 5,1,BLIZZARD
 	db 5,2,FIRE_BLAST
 	db 5,3,THUNDER
-	;seadra - rage, slam, surf, ice beam
+	;seadra - rage, slam, surf, blizzard
 	DB 6,1,RAGE
 	db 6,2,SLAM
 	db 6,3,SURF
-	db 6,4,ICE_BEAM
+	db 6,4,BLIZZARD
 	db 0
 
 	db SONY3,$1
@@ -244,9 +243,9 @@ SpecialTrainerMoves:
 	db 1,2,TRI_ATTACK
 	db 1,3,MIMIC
 	db 1,4,DOUBLE_TEAM
-	;alakazam - thunderwave, recover, psychic, kinesis
+	;alakazam - thunder wave, recover, psychic, kinesis
 	db 2,1,THUNDER_WAVE
-	;rhydon
+	;rhydon - thunderbolt, earthquake, rock slide, take down
 	db 3,1,THUNDERBOLT
 	db 3,2,EARTHQUAKE
 	db 3,3,ROCK_SLIDE

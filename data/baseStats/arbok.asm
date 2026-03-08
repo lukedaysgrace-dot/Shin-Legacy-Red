@@ -1,5 +1,5 @@
 db DEX_ARBOK ; pokedex id
-db 62 ; base hp
+db 76 ; base hp
 db 95 ; base attack
 db 69 ; base defense
 db 90 ; base speed
