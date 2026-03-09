@@ -101,7 +101,7 @@ MoveEnd:
 	move ROCK_THROW,   NO_ADDITIONAL_EFFECT,        50, ROCK,      95, 25
 	move EARTHQUAKE,   NO_ADDITIONAL_EFFECT,       100, GROUND,   100, 10
 	move FISSURE,      OHKO_EFFECT,                  1, GROUND,    30,  5
-	move DIG,          CHARGE_EFFECT,              80, GROUND,   100, 10
+	move DIG,          CHARGE_EFFECT,              70, GROUND,   100, 10
 	move TOXIC,        POISON_EFFECT,                0, POISON,    85, 10
 	move CONFUSION,    CONFUSION_SIDE_EFFECT,       50, PSYCHIC,  100, 25
 	move PSYCHIC_M,    SPECIAL_DOWN_SIDE_EFFECT,    90, PSYCHIC,  100, 10
@@ -140,7 +140,7 @@ MoveEnd:
 	move WATERFALL,    FLINCH_SIDE_EFFECT1,        70, WATER,    100, 15
 	move CLAMP,        TRAPPING_EFFECT,             35, WATER,     85, 10	;35, WATER,     85, 10
 	move SWIFT,        SWIFT_EFFECT,                60, NORMAL,   100, 20
-	move SKULL_BASH,   SPEED_DOWN_SIDE_EFFECT,              100, WATER,   100, 15
+	move SKULL_BASH,   HYPER_BEAM_EFFECT,              100, NORMAL,   100, 15
 	move SPIKE_CANNON, TWO_TO_FIVE_ATTACKS_EFFECT,  20, NORMAL,   100, 15
 	move CONSTRICT,    SPEED_DOWN_SIDE_EFFECT,      40, NORMAL,   100, 35
 	move AMNESIA,      SPECIAL_UP2_EFFECT,           0, PSYCHIC,  100, 20
@@ -167,7 +167,7 @@ MoveEnd:
 	move FURY_SWIPES,  TWO_TO_FIVE_ATTACKS_EFFECT,  20, NORMAL,    100, 15
 	move BONEMERANG,   ATTACK_TWICE_EFFECT,         60, GROUND,    100, 20
 	move REST,         HEAL_EFFECT,                  0, PSYCHIC,  100, 10
-	move ROCK_SLIDE,   FLINCH_SIDE_EFFECT1,        75, ROCK,      100, 10
+	move ROCK_SLIDE,   FLINCH_SIDE_EFFECT1,        75, ROCK,      95, 10
 	move HYPER_FANG,   FLINCH_SIDE_EFFECT1,         80, NORMAL,    90, 15
 	move SHARPEN,      ATTACK_UP1_EFFECT,            0, NORMAL,   100, 30
 	move CONVERSION,   CONVERSION_EFFECT,            0, NORMAL,   100, 30

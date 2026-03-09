@@ -3,7 +3,7 @@ ZoneMons2: ;Safari Zone North
 ;			-added tauros to bluejp
 	db $1E
 IF DEF(_ENCRED)
-	db 22, SCYTHER
+	db 22, NIDORAN_M
 	db 26, RHYHORN
 	db 23, PARAS
 	db 25, EXEGGCUTE

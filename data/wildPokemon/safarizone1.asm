@@ -3,16 +3,16 @@ ZoneMons1:	;Safari Zone East
 ;			-added kangaskhan to bluejp
 	db $1E
 	IF DEF(_ENCRED)
-		db 24,PINSIR
+		db 24,NIDORAN_M
 		db 26,DODUO
 		db 22,PARAS
 		db 25,EXEGGCUTE
 		db 33,NIDORINO
-		db 24,SCYTHER
-		db 28,KANGASKHAN
+		db 24,NIDORAN_F
+		db 28,SCYTHER
 		db 22,LICKITUNG
 		db 25,KANGASKHAN
-		db 25,SCYTHER
+		db 25,PARASECT
 	ELIF DEF(_ENCBLUEJP)
 		db 24, NIDORAN_M
 		db 26, DODUO

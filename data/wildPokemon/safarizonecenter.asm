@@ -3,9 +3,9 @@ ZoneMonsCenter:;joenote - swapped pinser/scyther
 	IF (DEF(_ENCRED) || DEF(_ENCBLUEJP))
 		db 22,NIDORAN_M
 		db 25,RHYHORN
-		db 22,PINSIR
+		db 22,VENONAT
 		db 24,EXEGGCUTE
-		db 31,RHYHORN
+		db 31,NIDORINO
 		db 25,EXEGGCUTE
 		db 31,NIDORINA
 		db 30,PARASECT

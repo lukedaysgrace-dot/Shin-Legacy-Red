@@ -305,7 +305,6 @@ IvysaurEvosMoves:
 ; Learnset
 	db 7, LEECH_SEED
 	db 13, VINE_WHIP
-	db 19, ACID
 	db 22, POISONPOWDER
 	db 30, RAZOR_LEAF
 	db 38, GROWTH
@@ -400,7 +399,6 @@ CuboneEvosMoves:
 ; Learnset;joenote-modified for yellow
 	db 13, TAIL_WHIP
 	db 16, HEADBUTT
-	db 20, DIG
 	db 25, LEER
 	db 31, FOCUS_ENERGY
 	db 38, THRASH
@@ -536,10 +534,9 @@ BlastoiseEvosMoves:
 	db 8, BUBBLE
 	db 15, WATER_GUN
 	db 24, BITE
-	db 28, RAGE
 	db 31, WITHDRAW
-	db 38, SKULL_BASH
-	db 46, HYDRO_PUMP
+	db 42, SKULL_BASH
+	db 52, HYDRO_PUMP
 	db 0
 
 PinsirEvosMoves:
@@ -753,10 +750,9 @@ PsyduckEvosMoves:
 	db EV_LEVEL, 28, GOLDUCK
 	db 0
 ; Learnset
-	db 12, CONFUSION
-	db 14, WATER_GUN
-	db 16, DISABLE
-	db 22, PSYBEAM
+	db 16, CONFUSION
+	db 24, DISABLE
+	db 28, PSYBEAM
 	db 43, FURY_SWIPES
 	db 52, HYDRO_PUMP
 	db 0
@@ -797,13 +793,12 @@ MagmarEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 26, LEER
-	db 29, CONFUSE_RAY
-	db 33, FIRE_PUNCH
-	db 36, SMOKESCREEN
-	db 39, GUILLOTINE
-	db 42, SMOG
-	db 45, FLAMETHROWER
+	db 36, LEER
+	db 39, CONFUSE_RAY
+	db 43, FIRE_PUNCH
+	db 48, SMOKESCREEN
+	db 52, SMOG
+	db 55, FLAMETHROWER
 	db 0
 
 MissingNo34EvosMoves:
@@ -816,12 +811,11 @@ ElectabuzzEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 24, THUNDERSHOCK
-	db 27, SCREECH
-	db 32, THUNDERPUNCH
-	db 37, GUILLOTINE
-	db 39, LIGHT_SCREEN
-	db 44, THUNDER
+	db 34, THUNDERSHOCK
+	db 37, SCREECH
+	db 42, THUNDERPUNCH
+	db 49, LIGHT_SCREEN
+	db 54, THUNDER
 	db 0
 
 MagnetonEvosMoves:
@@ -1459,29 +1453,26 @@ WeedleEvosMoves:
 	db EV_LEVEL, 7, KAKUNA
 	db 0
 ; Learnset
-	db 6, LEECH_LIFE
 	db 0
 
 KakunaEvosMoves:	;joenote - gave harden
 ; Evolutions
-	db EV_LEVEL, 15, BEEDRILL
+	db EV_LEVEL, 10, BEEDRILL
 	db 0
 ; Learnset
 	db 7, HARDEN
-	db 9, LEECH_LIFE
 	db 0
 
 BeedrillEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 15, LEECH_LIFE
-	db 16, ACID
-	db 20, PIN_MISSILE
+	db 12, FURY_ATTACK
+	db 16, FOCUS_ENERGY
+	db 20, TWINEEDLE
 	db 25, RAGE
-	db 30, TWINEEDLE
-	db 35, SLUDGE
-	db 39, AGILITY
+	db 30, PIN_MISSILE
+	db 35, AGILITY
 	db 0
 
 MissingNo73EvosMoves:
@@ -1511,8 +1502,7 @@ PrimeapeEvosMoves:
 	db 21, FURY_SWIPES
 	db 27, FOCUS_ENERGY
 	db 28, RAGE
-	db 34, SEISMIC_TOSS
-	db 38, GUILLOTINE
+	db 37, SEISMIC_TOSS
 	db 45, SCREECH
 	db 46, THRASH
 	db 0
@@ -1567,10 +1557,9 @@ MissingNo7AEvosMoves:
 
 CaterpieEvosMoves:	
 ; Evolutions
-	db EV_LEVEL, 8, METAPOD
+	db EV_LEVEL, 7, METAPOD
 	db 0
 ; Learnset
-	db 6, LEECH_LIFE
 	db 0
 
 MetapodEvosMoves: ;joenote - gave harden
@@ -1585,14 +1574,15 @@ ButterfreeEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 15, CONFUSION
-	db 17, LEECH_LIFE
-	db 19, SLEEP_POWDER
-	db 21, SUPERSONIC
-	db 24, WING_ATTACK
-	db 28, PSYBEAM
+	db 10, CONFUSION
+	db 13, POISONPOWDER
+	db 14, LEECH_LIFE
+	db 15, SLEEP_POWDER
+	db 18, SUPERSONIC
+	db 23, WHIRLWIND
+	db 28, GUST;joenote - yellow update
+	db 30, PSYBEAM
 	db 35, TWINEEDLE
-	db 38, PSYCHIC
 	db 0
 
 MachampEvosMoves:
@@ -1618,12 +1608,10 @@ GolduckEvosMoves:
 	db 0
 ; Learnset
 	db 28, PSYBEAM
-	db 31, SLASH
-	db 33, DISABLE
-	db 36, PSYCHIC
-	db 38, GUILLOTINE
+	db 31, DISABLE
 	db 39, AMNESIA
-	db 46, HYDRO_PUMP
+	db 48, FURY_SWIPES
+	db 59, HYDRO_PUMP
 	db 0
 
 HypnoEvosMoves:
@@ -1791,9 +1779,9 @@ MarowakEvosMoves:
 	db 16, HEADBUTT
 	db 25, LEER
 	db 33, FOCUS_ENERGY
-	db 36, THRASH
-	db 41, BONEMERANG
-	db 45, RAGE
+	db 41, THRASH
+	db 48, BONEMERANG
+	db 55, RAGE
 	db 0
 
 MissingNo92EvosMoves:
@@ -1875,7 +1863,7 @@ BulbasaurEvosMoves:
 	db 0
 ; Learnset
 	db 7, LEECH_SEED
-	db 12, VINE_WHIP
+	db 13, VINE_WHIP
 	db 20, POISONPOWDER
 	db 27, RAZOR_LEAF
 	db 34, GROWTH
@@ -1891,7 +1879,6 @@ VenusaurEvosMoves:
 	db 13, VINE_WHIP
 	db 22, POISONPOWDER
 	db 30, RAZOR_LEAF
-	db 38, SLUDGE
 	db 43, GROWTH
 	db 55, SLEEP_POWDER
 	db 65, SOLARBEAM
@@ -2124,8 +2111,7 @@ SquirtleEvosMoves:
 	db 8, BUBBLE
 	db 15, WATER_GUN
 	db 22, BITE
-	db 24, WITHDRAW
-	db 32, RAGE
+	db 28, WITHDRAW
 	db 35, SKULL_BASH
 	db 42, HYDRO_PUMP
 	db 0
@@ -2137,7 +2123,6 @@ CharmeleonEvosMoves:
 ; Learnset
 	db 9, EMBER
 	db 15, LEER
-	db 22, FIRE_PUNCH
 	db 24, RAGE
 	db 33, SLASH
 	db 38, FLAMETHROWER
@@ -2152,8 +2137,7 @@ WartortleEvosMoves:
 	db 8, BUBBLE
 	db 15, WATER_GUN
 	db 24, BITE
-	db 28, RAGE
-	db 32, WITHDRAW
+	db 31, WITHDRAW
 	db 39, SKULL_BASH
 	db 47, HYDRO_PUMP
 	db 0
