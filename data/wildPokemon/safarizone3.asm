@@ -2,12 +2,12 @@ ZoneMons3:	;Safari Zone West
 ;joenote - added mr mime & tweaked encounter tables
 	db $1E
 	IF DEF(_ENCRED)
-		db 25,NIDORAN_M
+		db 25,PINSIR
 		db 26,DODUO
 		db 23,VENONAT
 		db 24,EXEGGCUTE
-		db 33,NIDORINO
-		db 25,NIDORAN_F
+		db 33,CHANSEY
+		db 25,TAUROS
 		db 31,VENOMOTH
 		db 26,MR_MIME
 		db 26,TAUROS

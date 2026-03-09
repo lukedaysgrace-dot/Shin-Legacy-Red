@@ -1,16 +1,16 @@
 Route25Mons:;joenote - added charmander
 	db $0F
 	IF DEF(_ENCRED)
-		db 8,WEEDLE
-		db 9,KAKUNA
+		db 8,MACHOP
+		db 9,CUBONE
 		db 13,PIDGEY
 		db 13,ODDISH
 		db 12,ABRA
 		db 14,ODDISH
 		db 10,ABRA
-		db 7,METAPOD
+		db 7,CUBONE
 		db 10,CHARMANDER
-		db 8,CATERPIE
+		db 8,MACHOP
 	ELIF DEF(_ENCBLUEJP)
 		db  8, CATERPIE
 		db  9, METAPOD

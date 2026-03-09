@@ -2,7 +2,7 @@ db DEX_BUTTERFREE ; pokedex id
 db 80 ; base hp
 db 75 ; base attack
 db 60 ; base defense
-db 80 ; base speed
+db 85 ; base speed
 db 90 ; base special
 db BUG ; species type 1
 db PSYCHIC ; species type 2

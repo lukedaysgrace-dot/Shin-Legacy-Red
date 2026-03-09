@@ -271,8 +271,9 @@ GuillotineAnim:
 	db $FF
 
 RazorWindAnim:
-	db $04,$0C,$16
-	db $FF
+    	db $46,$11,$10
+    	db $04,$0C,$16
+    	db $FF
 
 SwordsDanceAnim:
 	db $46,$0D,$18
@@ -938,8 +939,10 @@ SwiftAnim:
 	db $FF
 
 SkullBashAnim:
-	db $46,$81,$05
-	db $FF
+    	db SE_SPIRAL_BALLS_INWARD
+    	db $46,$16,$82,$05
+    	db $06,$37,$1A
+    	db $FF
 
 SpikeCannonAnim:
 	db $44,$82,$04

@@ -1,9 +1,9 @@
 db DEX_METAPOD ; pokedex id
-db 50 ; base hp
-db 20 ; base attack
-db 55 ; base defense
+db 65 ; base hp
+db 60 ; base attack
+db 60 ; base defense
 db 30 ; base speed
-db 25 ; base special
+db 60 ; base special
 db BUG ; species type 1
 db BUG ; species type 2
 db 120 ; catch rate
