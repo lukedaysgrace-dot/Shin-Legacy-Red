@@ -1,15 +1,15 @@
 Route22Mons:
 	db $19
 	IF DEF(_ENCRED)
-		db 3,RATTATA
+		db 3,PSYDUCK
 		db 3,NIDORAN_M
 		db 4,RATTATA
 		db 4,NIDORAN_M
-		db 2,RATTATA
+		db 2,PSYDUCK
 		db 2,NIDORAN_M
 		db 3,SPEAROW
-		db 5,SPEAROW
-		db 3,NIDORAN_F
+		db 5,MANKEY
+		db 3,MANKEY
 		db 4,NIDORAN_F
 	ELIF DEF(_ENCBLUEJP)
 		db 3,RATTATA

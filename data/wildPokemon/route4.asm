@@ -1,4 +1,4 @@
-Route4Mons:;joenote - added bubasaur
+Route4Mons:;joenote - added bulbasaur
 	db $14
 	IF DEF(_ENCRED)
 		db 10,RATTATA

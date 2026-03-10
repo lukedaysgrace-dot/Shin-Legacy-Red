@@ -1,12 +1,12 @@
 ForestMons:
 	db $08
 	IF DEF(_ENCRED)
-		db 4,WEEDLE
-		db 5,KAKUNA
+		db 4,RALTS
+		db 5,CATERPIE
 		db 3,WEEDLE
-		db 5,WEEDLE
-		db 4,KAKUNA
-		db 6,KAKUNA
+		db 5,RALTS
+		db 4,PIKACHU
+		db 6,PIKACHU
 		db 4,METAPOD
 		db 3,CATERPIE
 	ELIF DEF(_ENCBLUEJP)

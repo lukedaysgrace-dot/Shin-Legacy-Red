@@ -1,7 +1,7 @@
 MoonMonsB1:
 	db $0A
-	db 8,ZUBAT
-	db 7,ZUBAT
+	db 8,SANDSHREW
+	db 7,CUBONE
 	db 7,GEODUDE
 	db 8,GEODUDE
 	db 9,ZUBAT
