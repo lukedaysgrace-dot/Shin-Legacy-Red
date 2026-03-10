@@ -7,12 +7,14 @@ ViridianMartScript:
 
 ViridianMartScript_1d47d:
 	CheckEvent EVENT_OAK_GOT_PARCEL
-	jr nz, .asm_1d489
+	jr nz, .parcelDone
 	ld hl, ViridianMartTextPointers
-	jr .asm_1d48c
-.asm_1d489
-	ld hl, ViridianMartTextPointers + $a ; starts at ViridianMartText6
-.asm_1d48c
+	jr .storePointer
+
+.parcelDone
+	ld hl, ViridianMartTextPointers + $a
+
+.storePointer
 	ld a, l
 	ld [wMapTextPtr], a
 	ld a, h
@@ -57,9 +59,11 @@ ViridianMartScript1:
 	SetEvent EVENT_GOT_OAKS_PARCEL
 	ld a, $2
 	ld [wViridianMarketCurScript], a
-	; fallthrough
+	ret
+
 ViridianMartScript2:
 	ret
+
 
 ViridianMartTextPointers:
 	dw ViridianMartText1
@@ -70,9 +74,19 @@ ViridianMartTextPointers:
 	dw ViridianCashierText
 	dw ViridianMartText2
 	dw ViridianMartText3
+	dw ViridianMartFisherText
+
 
 ViridianMartText1:
 	TX_FAR _ViridianMartText1
+	db "@"
+
+ViridianMartText2:
+	TX_FAR _ViridianMartText2
+	db "@"
+
+ViridianMartText3:
+	TX_FAR _ViridianMartText3
 	db "@"
 
 ViridianMartText4:
@@ -84,10 +98,77 @@ ViridianMartText5:
 	TX_SFX_KEY_ITEM
 	db "@"
 
-ViridianMartText2:
-	TX_FAR _ViridianMartText2
+
+
+ViridianMartFisherText:
+	TX_ASM
+	CheckEvent EVENT_VIRIDIAN_FISHER_GAVE_ROD
+	jr nz, .alreadyGot
+
+	ld hl, FisherGiveRodText
+	call PrintText
+	lb bc, OLD_ROD, 1
+	call GiveItem
+	jr nc, .bagFull
+
+	SetEvent EVENT_VIRIDIAN_FISHER_GAVE_ROD
+	ld hl, FisherReceivedRodText
+	call PrintText
+	jr .done
+
+.bagFull
+	ld hl, FisherBagFullText
+	call PrintText
+	jr .done
+
+.alreadyGot
+	ld hl, FisherAfterText
+	call PrintText
+
+.done
+	jp TextScriptEnd
+
+
+FisherGiveRodText:
+	TX_FAR _FisherGiveRodText
 	db "@"
 
-ViridianMartText3:
-	TX_FAR _ViridianMartText3
+FisherReceivedRodText:
+	TX_FAR _FisherReceivedRodText
+	TX_SFX_KEY_ITEM
 	db "@"
+
+FisherBagFullText:
+	TX_FAR _FisherBagFullText
+	db "@"
+
+FisherAfterText:
+	TX_FAR _FisherAfterText
+	db "@"
+
+_FisherGiveRodText:
+	text "I'm the FISHING"
+	line "GURU!"
+
+	para "Take this and"
+	line "fish, young"
+	cont "trainer!"
+	done
+
+
+_FisherReceivedRodText:
+	text "<PLAYER> got"
+	line "the OLD ROD!"
+	done
+
+
+_FisherBagFullText:
+	text "You don't have"
+	line "room for this!"
+	done
+
+
+_FisherAfterText:
+	text "Fish are"
+	line "biting today!"
+	done

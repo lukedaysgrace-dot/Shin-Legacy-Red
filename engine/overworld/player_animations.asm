@@ -392,34 +392,12 @@ FishingAnim:
 	call DelayFrames
 	ld hl, wd736
 	set 6, [hl] ; reserve the last 4 OAM entries
-;joenote - support female trainer sprite
-	push af
-IF DEF(_FPLAYER)
-	ld de, RedFSprite
-	lb bc, BANK(RedFSprite), $c
-	ld a, [wUnusedD721]
-	bit 0, a	;check if girl
-	jr nz, .donefemale
-ENDC
-	ld de, RedSprite
-	lb bc, BANK(RedSprite), $c
-.donefemale
-	pop af
-	ld hl, vNPCSprites
-	call CopyVideoData
-	ld a, $4
-;joenote - support female trainer sprite when fishing
-	push af
-IF DEF(_FPLAYER)
-	ld hl, RedFFishingTiles
-	ld a, [wUnusedD721]
-	bit 0, a	;check if girl
-	jr nz, .donefemale2
-ENDC
-	ld hl, RedFishingTiles
-.donefemale2
-	pop af
+
+	; load rod tiles for animation
+	ld hl, RedFishingRodTiles
+	ld a, 3
 	call LoadAnimSpriteGfx
+
 	ld a, [wSpriteStateData1 + 2]
 	ld c, a
 	ld b, $0

@@ -2158,7 +2158,7 @@ ItemUseOldRod:
 	srl a
 	jr c, .magikarp
 	ld a, [wCurMap]
-	and %11
+	and %111
 	jr ItemUseGoodRod.goodRodList
 .magikarp
 	lb bc, 5, MAGIKARP

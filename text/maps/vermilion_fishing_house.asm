@@ -1,58 +1,19 @@
-_VermilionHouse2Text_560b1::
-	text "I'm the FISHING"
-	line "GURU!"
+_VermilionHouse2Text_560c5:
+	text "Hey there!"
+	line ""
 
-	para "I simply Looove"
-	line "fishing!"
+	para "If you love"
+	line "fishing like"
+	cont "I do, visit"
+	cont "my brother in"
+	cont "VIRIDIAN CITY."
 
-	para "Do you like to"
-	line "fish?"
-	done
+	para "I'm all out of"
+	line "rods, but I"
+	cont "know he has"
+	cont "a spare."
 
-_VermilionHouse2Text_560b6::
-	text "Grand! I like"
-	line "your style!"
-
-	para "Take this and"
-	line "fish, young one!"
-
-;joenote - add hotkey info
-	para "Hold A and press"
-	line "SELECT to use the"
-	cont "rod quickly.@@"
-
-	para "<PLAYER> received"
-	line "an @"
-	TX_RAM wcf4b
-	text "!@@"
-
-_VermilionHouse2Text_560bb::
-	db $0
-	para "Fishing is a way"
-	line "of life!"
-
-	para "From the seas to"
-	line "rivers, go out"
-	cont "and land the big"
-	cont "one, young one!"
-	done
-
-_VermilionHouse2Text_560c0::
-	text "Oh... That's so"
-	line "disappointing..."
-	done
-
-_VermilionHouse2Text_560c5::
-	text "Hello there,"
-	line "<PLAYER>!"
-
-	para "How are the fish"
-	line "biting?"
-	done
-
-_VermilionHouse2Text_560ca::
-	text "Oh no!"
-
-	para "You have no room"
-	line "for my gift!"
+	para "Go out and"
+	line "hook some"
+	cont "big ones!"
 	done
