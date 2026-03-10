@@ -302,6 +302,3 @@ BELLSPROUT_FR	EQUS	"\"pic/bmon/bellsprout.pic\""
 WEEPINBELL_FR	EQUS	"\"pic/bmon/weepinbell.pic\""
 	INCBIN	"pic/bmon/victreebel.pic",0,0
 VICTREEBEL_FR	EQUS	"\"pic/bmon/victreebel.pic\""
-RALTS_FR	EQUS	"\"pic/bmon/ralts.pic\""
-KIRLIA_FR	EQUS	"\"pic/bmon/kirlia.pic\""
-GARDEVOIR_FR	EQUS	"\"pic/bmon/gardevoir.pic\""
