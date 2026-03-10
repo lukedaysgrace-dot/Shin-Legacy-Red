@@ -78,6 +78,7 @@ SpecialTrainerMoves:
 	
 	db MISTY,$1
 	;staryu - tackle, water gun
+	;horsea - water gun, tackle, bubble, smokescreen
 	;starmie - tackle, water gun, harden, bubblebeam
 	db 2,4,BUBBLEBEAM
 	db 0
@@ -85,7 +86,7 @@ SpecialTrainerMoves:
 	db LT_SURGE,$1
 	;voltorb - tackle, screech, sonic boom, thundershock
 	;electabuzz - thunder punch, rage, counter, quick attack
-	;raichu - thunderbolt, tail whip, thunder wave, slam
+	;raichu - thunderbolt, tail whip, thunder wave, body slam
 	db 3,1,THUNDERBOLT
 	db 0
 	
@@ -107,7 +108,7 @@ SpecialTrainerMoves:
 	;arbok - sludge, double-team, dig, glare
 	db 1,1,SLUDGE
 	db 1,2,DOUBLE_TEAM
-	;muk - disable, substitute, minimize, sludge
+	;muk - disable, body slam, minimize, sludge
 	db 2,2,SUBSTITUTE
 	;venomoth - psybeam, supersonic, mega drain, sleep powder
 	db 3,1,TAKE_DOWN
@@ -120,13 +121,13 @@ SpecialTrainerMoves:
 	db 0
 	
 	db SABRINA,$1
-	;kadabra - reflect, disable, psybeam, recover
-	db 1,1,REFLECT
-	;mr mime - psybeam, barrier, light screen, seismic toss
+	;mr mime - psychic, barrier, light screen, seismic toss
 	db 2,4,SEISMIC_TOSS
-	;golduck - psybeam, surf, amnesia, submission
+	;gardevoir - psychic, fire punch, night shade, thunderbolt
+	;golduck - psychic, surf, amnesia, submission
 	db 3,1,PSYBEAM
-	;alakazam - psywave, recover, psychic, reflect
+	;jynx - ice punch, psychic, lovely kiss, bubble beam
+	;alakazam - psywave, recover, psychic, thunder wave
 	db 4,1,PSYWAVE
 	db 0
 	
@@ -208,7 +209,7 @@ SpecialTrainerMoves:
 	db 3,4,SLUDGE
 	;arbok - earthquake, glare, screech, sludge
 	db 4,1,EARTHQUAKE
-	;gengar - confuse ray, night shade, hypnosis, dream eater
+	;gengar - mega drain, night shade, hypnosis, dream eater
 	db 5,2,NIGHT_SHADE
 	;weezing - sludge, toxic, flamethrower, thunderbolt
 	db 0
@@ -220,17 +221,19 @@ SpecialTrainerMoves:
 	db 2,1,THUNDER_WAVE
 	db 2,2,SLAM
 	db 2,3,THUNDERBOLT
-	;dragonite - surf, slam, ice beam, hyperbeam
+	;dragonite - surf, slam, barrier, razor wind
 	db 3,1,SURF
 	db 3,2,SLAM
-	db 3,3,ICE_BEAM
+	db 3,3,BARRIER
+	db 3,4,RAZOR_WIND
 	;aerodactyl - rock slide, fire blast, razor wind, hyperbeam
 	db 4,2,FIRE_BLAST
-	db 4,3,FLY
-	;dragonite - blizzard, fire blast, thunder, hyperbeam
-	db 5,1,BLIZZARD
-	db 5,2,FIRE_BLAST
-	db 5,3,THUNDER
+	db 4,3,RAZOR_WIND
+	;salamence - slam, flamethrower, razor wind, rock slide
+	db 5,1,RAZOR_WIND
+	db 5,2,FLAMETHROWER
+	db 5,3,SLAM
+	db 5,4,ROCK_SLIDE
 	;seadra - rage, slam, surf, ice beam
 	DB 6,1,RAGE
 	db 6,2,SLAM
@@ -257,9 +260,10 @@ SpecialTrainerMoves:
 	db 4,3,DOUBLE_EDGE
 	;exeggutor - leech seed, dream eater, mega drain, hypnosis
 	db 5,1,LEECH_SEED
-	;blastoise - blizzard, reflect, skull bash, surf
+	;blastoise - blizzard, reflect, skull bash, earthquake
 	db 6,1,BLIZZARD
-	db 6,2,REFLECT
+	db 6,2,SKULL_BASH
+	DB 6,3,EARTHQUAKE
 	db 0
 
 	db SONY3,$2
