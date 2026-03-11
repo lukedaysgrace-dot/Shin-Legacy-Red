@@ -2147,7 +2147,7 @@ CoinCaseNumCoinsText:
 	db "@"
 
 ItemUseOldRod:
-	;joenote - chooses 1 of the first 4 pokemon off the good rod list based on the current map constant
+	;joenote - chooses 1 of the first 8 pokemon off the good rod list based on the current map constant
 	;		-but 50% chance to hook a lvl 5 to 12 magikarp
 	call FishingInit
 	jp c, ItemUseNotTime
@@ -2155,11 +2155,13 @@ ItemUseOldRod:
 	bit BIT_B_BUTTON, a
 	jr nz, .magikarp
 	call Random
-	srl a
-	jr c, .magikarp
-	ld a, [wCurMap]
 	and %111
-	jr ItemUseGoodRod.goodRodList
+	cp 0
+	jr z, .magikarp
+
+	call Random
+	and %111
+jr ItemUseGoodRod.goodRodList
 .magikarp
 	lb bc, 5, MAGIKARP
 	ld a, $1 ; set bite
