@@ -86,8 +86,14 @@ SpecialTrainerMoves:
 	db LT_SURGE,$1
 	;voltorb - tackle, screech, sonic boom, thundershock
 	;electabuzz - thunder punch, rage, counter, quick attack
+	db 2,1,THUNDERPUNCH
+	db 2,2,RAGE
+	db 2,3,COUNTER
+	db 2,4,QUICK_ATTACK
 	;raichu - thunderbolt, tail whip, thunder wave, body slam
 	db 3,1,THUNDERBOLT
+	db 3,3,THUNDER_WAVE
+	DB 3,4,BODY_SLAM
 	db 0
 	
 	db ERIKA,$1
