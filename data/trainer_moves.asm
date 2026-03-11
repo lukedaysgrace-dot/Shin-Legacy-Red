@@ -198,16 +198,22 @@ SpecialTrainerMoves:
 	db 1,1,EARTHQUAKE
 	db 1,2,HYPER_BEAM
 	db 1,3,SEISMIC_TOSS
-	;dugtrio - fissure, earthquake, sand attack, slash
-	db 2,1,FISSURE
-	;nidoqueen - earthquake, submission, thunderbolt, body slam
+	db1,4,DIZZY_PUNCH
+	;sandslash - sludge, earthquake, twineedle, slash
+	db 2,1,SLUDGE
+	db 2,2,EARTHQUAKE
+	db 2,3,TWINEEDLE
+	db 2,4,SLASH
+	;nidoqueen - earthquake, submission, thunderbolt, surf
 	db 3,1,EARTHQUAKE
 	db 3,2,SUBMISSION
 	db 3,3,THUNDERBOLT
-	;nidoking - earthquake, submission, ice beam, surf
+	db 3,4,SURF
+	;nidoking - earthquake, submission, ice beam, rock slide
 	db 4,1,EARTHQUAKE
 	db 4,2,SUBMISSION
 	db 4,3,ICE_BEAM
+	db 4,4,ROCK_SLIDE
 	;rhydon
 	db 5,1,ROCK_SLIDE
 	db 5,2,FISSURE

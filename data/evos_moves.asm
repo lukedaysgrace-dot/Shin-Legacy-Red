@@ -1239,7 +1239,8 @@ SandshrewEvosMoves:
 	db 10, SAND_ATTACK
 	db 17, SLASH
 	db 24, POISON_STING
-	db 31, SWIFT
+	db 28, TWINEEDLE
+	db 31, SLUDGE
 	db 38, FURY_SWIPES
 	db 0
 
@@ -1248,10 +1249,10 @@ SandslashEvosMoves:
 	db 0
 ; Learnset
 	db 10, SAND_ATTACK
-	db 17, SLASH
-	db 27, POISON_STING
-	db 36, SWIFT
-	db 47, FURY_SWIPES
+	db 23, SLASH
+	db 26, SLUDGE
+	db 30, TWINEEDLE
+	db 37, EARTHQUAKE
 	db 0
 
 OmanyteEvosMoves:
