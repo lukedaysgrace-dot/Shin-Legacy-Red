@@ -78,9 +78,12 @@ SpecialTrainerMoves:
 	
 	db MISTY,$1
 	;staryu - tackle, water gun
-	;horsea - water gun, tackle, bubble, smokescreen
-	;starmie - tackle, water gun, harden, bubblebeam
-	db 2,4,BUBBLEBEAM
+	;horsea - bubblebeam, tackle, bubble, smokescreen
+	db 2,1,BUBBLEBEAM
+	db 2,2,TACKLE
+	db 2,4,SMOKESCREEN
+	;starmie - confusion, water gun, harden, bubblebeam
+	db 3,1,CONFUSION
 	db 0
 	
 	db LT_SURGE,$1
@@ -98,41 +101,70 @@ SpecialTrainerMoves:
 	
 	db ERIKA,$1
 	;tangela - constrict, bind, absorb, vine whip
+	;parasect - leech life, mega drain, slash, spore
+	db 2,1,LEECH_LIFE
+	db 2,2,MEGA_DRAIN
+	db 2,3,SLASH
+	db 2,4,SPORE
 	;victreebel
-	db 2,1,GROWTH
-	db 2,2,SLEEP_POWDER
-	db 2,3,WRAP
-	db 2,4,RAZOR_LEAF
+	db 3,1,GROWTH
+	db 3,2,SLEEP_POWDER
+	db 3,3,WRAP
+	db 3,4,RAZOR_LEAF
 	;vileplume
-	db 3,1,POISONPOWDER
-	db 3,2,MEGA_DRAIN
-	db 3,3,SLEEP_POWDER
-	db 3,4,PETAL_DANCE
+	db 4,1,POISONPOWDER
+	db 4,2,MEGA_DRAIN
+	db 4,3,SLEEP_POWDER
+	db 4,4,PETAL_DANCE
 	db 0
 	
 	db KOGA,$1
 	;arbok - sludge, double-team, dig, glare
 	db 1,1,SLUDGE
 	db 1,2,DOUBLE_TEAM
+	db 1,3,DIG
+	db 1,4,GLARE
 	;muk - disable, body slam, minimize, sludge
-	db 2,2,SUBSTITUTE
+	db 2,1,DISABLE
+	db 2,2,BODY_SLAM
+	db 2,3,MINIMIZE
+	db 2,4,SLUDGE
 	;venomoth - psybeam, supersonic, mega drain, sleep powder
-	db 3,1,TAKE_DOWN
+	db 3,1,PSYBEAM
 	db 3,2,SUPERSONIC
 	db 3,3,MEGA_DRAIN
+	db 4,4,SLEEP_POWDER
 	;weezing - toxic, sludge, mimic, explosion
 	db 4,1,TOXIC
+	db 4,2,SLUDGE
 	db 4,3,MIMIC
 	db 4,4,EXPLOSION
+	;tentacruel - toxic,sludge,confuse ray, surf
+	db 5,1,TOXIC
+	db 5,2,SLUDGE
+	db 5,3,CONFUSE_RAY
+	db 5,4,SURF
 	db 0
 	
 	db SABRINA,$1
 	;mr mime - psychic, barrier, light screen, seismic toss
-	db 2,4,SEISMIC_TOSS
+	db 1,1,PSYCHIC_M
+	db 1,4,SEISMIC_TOSS
 	;gardevoir - psychic, fire punch, night shade, thunderbolt
+	db 2,1,PSYCHIC_M
+	db 2,2,FIRE_PUNCH
+	db 2,3,NIGHT_SHADE
+	db 2,4,THUNDERBOLT
 	;golduck - psychic, surf, amnesia, submission
-	db 3,1,PSYBEAM
+	db 3,1,PSYCHIC_M
+	db 3,2,SURF
+	db 3,3,AMNESIA
+	db 3,4,SUBMISSION
 	;jynx - ice punch, psychic, lovely kiss, bubble beam
+	db 4,1,ICE_PUNCH
+	db 4,2,PSYCHIC_M
+	db 4,3,LOVELY_KISS
+	db 4,4,BUBBLEBEAM
 	;alakazam - psywave, recover, psychic, thunder wave
 	db 4,1,PSYWAVE
 	db 0
@@ -140,35 +172,52 @@ SpecialTrainerMoves:
 	db BLAINE,$1
 	;ninetales - quick attack, swift, confuse ray, flamethrower
 	db 1,2,SWIFT
-	;magmar - strength, counter, confuse ray, flamethrower
-	db 2,1,STRENGTH
+	;magmar - guillotine, counter, confuse ray, flamethrower
+	db 2,1,GUILLOTINE
 	db 2,2,COUNTER
+	db 2,3,CONFUSE_RAY
+	db 2,4,FLAMETHROWER
 	;rapidash - flamethrower, stomp, double-edge, fire spin
+	db 3,1,FLAMETHROWER
+	db 3,2,STOMP
 	db 3,3,DOUBLE_EDGE
-	;arcanine - fire blast, bite, leer, body slam
+	db 3,4,FIRE_SPIN
+	;arcanine - fire blast, dig, leer, body slam
 	db 4,1,FIRE_BLAST
+	db 4,2,DIG
+	db 4,3,BODY_SLAM
 	;flareon - flamethrower, dig, body slam, quick attack
+	db 5,1,FLAMETHROWER
+	db 5,2,DIG
+	db 5,3,BODY_SLAM
+	db 5,4,QUICK_ATTACK
 	db 0
 	
 	db GIOVANNI,$3
-	;kangaskhan - earthquake, hyper beam, fissure, dizzy punch
+	;kangaskhan - earthquake, hyper beam, seismic toss, dizzy punch
 	db 1,1,EARTHQUAKE
 	db 1,2,HYPER_BEAM
-	db 1,3,FISSURE
+	db 1,3,SEISMIC_TOSS
 	;dugtrio - fissure, earthquake, sand attack, slash
 	db 2,1,FISSURE
-	;nidoqueen - earthquake, double kick, thunder, body slam
+	;nidoqueen - earthquake, submission, thunderbolt, body slam
 	db 3,1,EARTHQUAKE
-	db 3,3,THUNDER
-	;nidoking - earthquake, double kick, ice beam, surf
+	db 3,2,SUBMISSION
+	db 3,3,THUNDERBOLT
+	;nidoking - earthquake, submission, ice beam, surf
 	db 4,1,EARTHQUAKE
+	db 4,2,SUBMISSION
 	db 4,3,ICE_BEAM
 	;rhydon
 	db 5,1,ROCK_SLIDE
-	db 5,2,BODY_SLAM
+	db 5,2,FISSURE
 	db 5,3,DOUBLE_TEAM
 	db 5,4,EARTHQUAKE
 	;kabutops - surf, rock slide, mega drain, razor wind
+	db 6,1,SURF
+	db 6,2,ROCK_SLIDE
+	db 6,3,MEGA_DRAIN
+	db 6,4,RAZOR_WIND
 	db 0
 	
 	db LORELEI,$1
@@ -185,6 +234,10 @@ SpecialTrainerMoves:
 	;lapras - body slam, confuse ray, blizzard, hydro pump
 	db 5,3,BLIZZARD
 	;omastar - surf, rock slide, blizzard, seismic toss
+	db 6,1,SURF
+	db 6,2,ROCK_SLIDE
+	db 6,3,BLIZZARD
+	db 6,4,SEISMIC_TOSS
 	db 0
 
 	db BRUNO,$1
@@ -197,32 +250,58 @@ SpecialTrainerMoves:
 	;hitmonlee - submission, focus energy, hi jump kick, mega kick
 	db 3,1,HI_JUMP_KICK
 	;golem - earthquake, rock slide, body slam, explosion
-	db 4,1,ROCK_SLIDE
-	;machamp - earthquake, guillotine, rock slide, submission
+	db 4,1,EARTHQUAKE
+	db 4,2,ROCK_SLIDE
+	db 4,3,BODY_SLAM
+	db 4,4,EXPLOSION
+	;machamp - earthquake, guillotine, rock slide, counter
 	db 5,1,EARTHQUAKE
 	db 5,2,GUILLOTINE
+	db 5,3,ROCK_SLIDE
+	db 5,4,COUNTER
 	;poliwrath - submission, amnesia, psychic, surf
+	db 6,1,SUBMISSION
+	db 6,2,AMNESIA
+	db 6,3,PSYCHIC_M
+	db 6,4,SURF
 	db 0
 
 	db AGATHA,$1
 	;gengar - night shade, confuse ray, hypnosis, dream eater
+	db 1,1,NIGHT_SHADE
 	db 1,2,CONFUSE_RAY
 	;tentacruel - sludge, surf, confuse ray, blizzard
 	db 2,1,SLUDGE
+	db 2,2,SURF
+	db 2,3,CONFUSE_RAY
+	db 2,4,BLIZZARD
 	;golbat - screech, confuse ray, razor wind, sludge
 	db 3,1,SCREECH
+	db 3,2,CONFUSE_RAY
 	db 3,3,RAZOR_WIND
 	db 3,4,SLUDGE
 	;arbok - earthquake, glare, screech, sludge
 	db 4,1,EARTHQUAKE
+	db 4,2,GLARE
+	db 4,3,SCREECH
+	db 4,4,SLUDGE
 	;gengar - mega drain, night shade, hypnosis, dream eater
+	db 5,1,MEGA_DRAIN
 	db 5,2,NIGHT_SHADE
+	db 5,3,HYPNOSIS
+	db 5,4,DREAM_EATER
 	;weezing - sludge, toxic, flamethrower, thunderbolt
+	db 6,1,SLUDGE
+	db 6,2,TOXIC
+	db 6,3,FLAMETHROWER
+	db 6,4,THUNDERBOLT
 	db 0
 
 	db LANCE,$1
 	;gyarados - dragon rage, slam, hydro pump, hyperbeam
-	db 1,2,HYDRO_PUMP
+	db 1,1,DRAGON_RAGE
+	db 1,2,SLAM
+	db 1,3,HYDRO_PUMP
 	;dragonite - thunder wave, slam, thunderbolt, hyperbeam
 	db 2,1,THUNDER_WAVE
 	db 2,2,SLAM
@@ -233,43 +312,49 @@ SpecialTrainerMoves:
 	db 3,3,BARRIER
 	db 3,4,RAZOR_WIND
 	;aerodactyl - rock slide, fire blast, razor wind, hyperbeam
+	db 4,1,ROCK_SLIDE
 	db 4,2,FIRE_BLAST
 	db 4,3,RAZOR_WIND
 	;salamence - slam, flamethrower, razor wind, rock slide
-	db 5,1,RAZOR_WIND
+	db 5,1,SLAM
 	db 5,2,FLAMETHROWER
-	db 5,3,SLAM
+	db 5,3,RAZOR_WIND
 	db 5,4,ROCK_SLIDE
-	;seadra - rage, slam, surf, ice beam
+	;seadra - rage, slam, surf, blizzard
 	DB 6,1,RAGE
 	db 6,2,SLAM
 	db 6,3,SURF
-	db 6,4,ICE_BEAM
+	db 6,4,BLIZZARD
 	db 0
 
 	db SONY3,$1
 	;pidgeot
 	db 1,1,SKY_ATTACK
-	db 1,2,TRI_ATTACK
+	db 1,2,BODY_SLAM
 	db 1,3,MIMIC
 	db 1,4,DOUBLE_TEAM
 	;alakazam - thunderwave, recover, psychic, kinesis
 	db 2,1,THUNDER_WAVE
+	db 2,4,KINESIS
 	;rhydon
 	db 3,1,THUNDERBOLT
 	db 3,2,EARTHQUAKE
 	db 3,3,ROCK_SLIDE
-	db 3,4,TAKE_DOWN
+	db 3,4,SURF
 	;arcanine - reflect, rest, double edge, flamethrower
 	db 4,1,REFLECT
 	db 4,2,REST
 	db 4,3,DOUBLE_EDGE
-	;exeggutor - leech seed, dream eater, mega drain, hypnosis
-	db 5,1,LEECH_SEED
+	db 4,4,FLAMETHROWER
+	;exeggutor - psychic, dream eater, mega drain, hypnosis
+	db 5,1,PSYCHIC_M
+	db 5,2,DREAM_EATER
+	db 5,3,MEGA_DRAIN
+	db 5,4,HYPNOSIS
 	;blastoise - blizzard, reflect, skull bash, earthquake
 	db 6,1,BLIZZARD
-	db 6,2,SKULL_BASH
-	DB 6,3,EARTHQUAKE
+	db 6,3,SKULL_BASH
+	DB 6,4,EARTHQUAKE
 	db 0
 
 	db SONY3,$2
@@ -278,20 +363,22 @@ SpecialTrainerMoves:
 	db 1,2,TRI_ATTACK
 	db 1,3,MIMIC
 	db 1,4,DOUBLE_TEAM
-	;alakazam - thunderwave, recover, psychic, reflect
+	;alakazam - thunderwave, recover, psychic, kinesis
 	db 2,1,THUNDER_WAVE
+	db 2,4,KINESIS
 	;rhydon
 	db 3,1,THUNDERBOLT
 	db 3,2,EARTHQUAKE
 	db 3,3,ROCK_SLIDE
-	db 3,4,TAKE_DOWN
+	db 3,4,SURF
 	;gyarados - ice beam, body slam, hydro pump, hyperbeam
 	db 4,1,ICE_BEAM
 	db 4,2,BODY_SLAM
-	;arcanine - reflect, rest, body slam, flamethrower
+	;arcanine - reflect, earthquake, body slam, flamethrower
 	db 5,1,REFLECT
-	db 5,2,REST
+	db 5,2,EARTHQUAKE
 	db 5,3,BODY_SLAM
+	db 5,4,FLAMETHROWER
 	;venusaur - razor leaf, toxic, sleep powder, mega drain
 	db 6,2,TOXIC
 	db 0
@@ -308,15 +395,19 @@ SpecialTrainerMoves:
 	db 3,1,THUNDERBOLT
 	db 3,2,EARTHQUAKE
 	db 3,3,ROCK_SLIDE
-	db 3,4,TAKE_DOWN
-	;exeggutor - leech seed, mega drain, dream eater, hypnosis
-	db 4,1,LEECH_SEED
+	db 3,4,SURF
+	;exeggutor - psychic mega drain, dream eater, hypnosis
+	db 4,1,PSYCHIC_M
+	db 4,2,MEGA_DRAIN
+	db 4,3,DREAM_EATER
+	db 4,4,HYPNOSIS
 	;gyarados - ice beam, body slam, hydro pump, hyperbeam
 	db 5,1,ICE_BEAM
 	db 5,2,BODY_SLAM
 	;charizard - razor wind, slash, flamethrower, fire spin
 	db 6,1,RAZOR_WIND
 	db 6,3,FLAMETHROWER
+	db 6,4,FIRE_SPIN
 	db 0
 
 	;prof oak's pokemon
@@ -410,7 +501,7 @@ SpecialTrainerMoves:
 	db 3,1,AMNESIA
 	db 3,2,BLIZZARD
 	db 3,3,SURF
-	db 3,4,PSYCHIC
+	db 3,4,PSYCHIC_M
 	;pinsir
 	db 4,1,SLASH
 	db 4,2,SWORDS_DANCE
@@ -437,7 +528,7 @@ SpecialTrainerMoves:
 	db 1,4,DOUBLE_EDGE
 	;gengar
 	db 2,1,THUNDERBOLT
-	db 2,2,HYPNOSIS
+	db 2,2,NIGHT_SHADE
 	db 2,3,MEGA_DRAIN
 	db 2,4,CONFUSE_RAY
 	;victreebel
@@ -454,9 +545,9 @@ SpecialTrainerMoves:
 	db 5,1,EARTHQUAKE
 	db 5,2,ROCK_SLIDE
 	db 5,3,SUBMISSION
-	db 5,4,HYPER_BEAM
+	db 5,4,DIZZY_PUNCH
 	;blastoise
-	db 6,1,SURF
+	db 6,1,SKULL_BASH
 	db 6,2,BLIZZARD
 	db 6,3,SEISMIC_TOSS
 	db 6,4,MIMIC
@@ -480,7 +571,7 @@ SpecialTrainerMoves:
 	db 3,3,SWORDS_DANCE
 	db 3,4,HYPER_BEAM
 	;blastoise
-	db 4,1,HYDRO_PUMP
+	db 4,1,SKULL_BASH
 	db 4,2,BLIZZARD
 	db 4,3,BODY_SLAM
 	db 4,4,EARTHQUAKE
