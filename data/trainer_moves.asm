@@ -198,7 +198,7 @@ SpecialTrainerMoves:
 	db 1,1,EARTHQUAKE
 	db 1,2,HYPER_BEAM
 	db 1,3,SEISMIC_TOSS
-	db1,4,DIZZY_PUNCH
+	db 1,4,DIZZY_PUNCH
 	;sandslash - sludge, earthquake, twineedle, slash
 	db 2,1,SLUDGE
 	db 2,2,EARTHQUAKE
