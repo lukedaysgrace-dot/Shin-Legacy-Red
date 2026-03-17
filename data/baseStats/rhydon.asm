@@ -1,10 +1,10 @@
 db DEX_RHYDON ; pokedex id
 db 105 ; base hp
-db 130 ; base attack
-db 120 ; base defense
+db 110 ; base attack
+db 100 ; base defense
 db 40 ; base speed
-db 45 ; base special
-db GROUND ; species type 1
+db 85 ; base special
+db ROCK ; species type 1
 db ROCK ; species type 2
 db 60 ; catch rate
 db 204 ; base exp yield

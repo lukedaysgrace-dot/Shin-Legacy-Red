@@ -1,11 +1,11 @@
 db DEX_GOLEM ; pokedex id
 db 80 ; base hp
 db 110 ; base attack
-db 120 ; base defense
-db 45 ; base speed
+db 110 ; base defense
+db 55 ; base speed
 db 85 ; base special
 db ROCK ; species type 1
-db GROUND ; species type 2
+db ROCK ; species type 2
 db 45 ; catch rate
 db 177 ; base exp yield
 INCBIN GOLEM_FR,0,1 ; 66, sprite dimensions

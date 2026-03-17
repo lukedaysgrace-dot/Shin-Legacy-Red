@@ -1,11 +1,11 @@
 db DEX_POLIWHIRL ; pokedex id
 db 65 ; base hp
-db 65 ; base attack
+db 70 ; base attack
 db 65 ; base defense
 db 90 ; base speed
-db 50 ; base special
+db 70 ; base special
 db WATER ; species type 1
-db WATER ; species type 2
+db FIGHTING ; species type 2
 db 120 ; catch rate
 db 131 ; base exp yield
 INCBIN POLIWHIRL_FR,0,1 ; 66, sprite dimensions
@@ -25,7 +25,7 @@ db 3 ; growth rate
 	tmlearn 17,18,19,20
 	tmlearn 26,27,29,31,32
 	tmlearn 34,35,40
-	tmlearn 44,46
+	tmlearn 42,44,46,48
 	tmlearn 50,53,54
 ;	db 0 ; padding
 	db BANK(PoliwhirlPicFront)

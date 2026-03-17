@@ -1,9 +1,9 @@
 db DEX_RAPIDASH ; pokedex id
-db 65 ; base hp
-db 100 ; base attack
+db 75 ; base hp
+db 90 ; base attack
 db 70 ; base defense
 db 115 ; base speed
-db 80 ; base special
+db 90 ; base special
 db FIRE ; species type 1
 db FIRE ; species type 2
 db 60 ; catch rate
@@ -20,7 +20,7 @@ db 0 ; growth rate
 ; learnset
 	tmlearn 6,7,8
 	tmlearn 9,10,15
-	tmlearn 20
+	tmlearn 20,22
 	tmlearn 31,32
 	tmlearn 33,34,38,39,40
 	tmlearn 44
